@@ -20,7 +20,7 @@
                 <base-dropdown class="nav-item" menu-classes="dropdown-menu-xl">
                     <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
                         <i class="ni ni-ui-04 d-lg-none"></i>
-                        <span class="nav-link-inner--text">Components</span>
+                        <span class="nav-link-inner--text">My Work</span>
                     </a>
                     <div class="dropdown-menu-inner">
                         <a href="https://demos.creative-tim.com/vue-argon-design-system/documentation/"
@@ -29,9 +29,8 @@
                                 <i class="ni ni-spaceship"></i>
                             </div>
                             <div class="media-body ml-3">
-                                <h6 class="heading text-primary mb-md-1">Getting started</h6>
-                                <p class="description d-none d-md-inline-block mb-0">Get started with Bootstrap, the
-                                    world's most popular framework for building responsive sites.</p>
+                                <h6 class="heading text-primary mb-md-1">Software</h6>
+                                <p class="description d-none d-md-inline-block mb-0">Take a tour of my recent apps.</p>
                             </div>
                         </a>
                         <a href="https://demos.creative-tim.com/vue-argon-design-system/documentation/"
@@ -46,16 +45,6 @@
                             </div>
                         </a>
                     </div>
-                </base-dropdown>
-                <base-dropdown tag="li" class="nav-item">
-                    <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
-                        <i class="ni ni-collection d-lg-none"></i>
-                        <span class="nav-link-inner--text">Examples</span>
-                    </a>
-                    <nuxt-link to="/argon-demo/landing" class="dropdown-item">Landing</nuxt-link>
-                    <nuxt-link to="/argon-demo/profile" class="dropdown-item">Profile</nuxt-link>
-                    <nuxt-link to="/argon-demo/login" class="dropdown-item">Login</nuxt-link>
-                    <nuxt-link to="/argon-demo/register" class="dropdown-item">Register</nuxt-link>
                 </base-dropdown>
             </ul>
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
@@ -78,15 +67,6 @@
                        target="_blank" rel="noopener" data-toggle="tooltip" title="Find me on Github">
                         <i class="fab fa-github"></i>
                         <span class="nav-link-inner--text d-lg-none">Github</span>
-                    </a>
-                </li>
-                <li class="nav-item d-none d-lg-block ml-lg-4">
-                    <a href="https://www.creative-tim.com/product/vue-argon-design-system" target="_blank" rel="noopener"
-                       class="btn btn-neutral btn-icon">
-                <span class="btn-inner--icon">
-                  <i class="fa fa-cloud-download mr-2"></i>
-                </span>
-                        <span class="nav-link-inner--text">Download</span>
                     </a>
                 </li>
             </ul>
