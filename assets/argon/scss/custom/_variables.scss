@@ -118,8 +118,8 @@ $brand-colors: map-merge((
 
 $shape-colors: () !default;
 $shape-colors: map-merge((
-  "default":      #32325d,
-  "primary":      #5533ff,
+  "default":      #0caf3d,
+  "primary":      #47d17c,
   "secondary":    #24b47e,
   "neutral":      #e9ecef,
   "blue-gray":    #b2cbe1,
@@ -128,9 +128,9 @@ $shape-colors: map-merge((
 
 $shapes-primary-colors: () !default;
 $shapes-primary-colors: map-merge((
-  "step-1-gradient-bg":         #281483,
-  "step-2-gradient-bg":         #8f6ed5,
-  "step-3-gradient-bg":         #d782d9,
+  "step-1-gradient-bg":         #265240,
+  "step-2-gradient-bg":         #6ed576,
+  "step-3-gradient-bg":         #66ab33,
   "span-1-bg":                  #53f,
   "span-2-bg":                  #4553ff,
   "span-3-bg":                  #4f40ff,

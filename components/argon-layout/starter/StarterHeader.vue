@@ -2,7 +2,7 @@
     <header class="header-global">
         <base-nav class="navbar-main" transparent type="" effect="light" expand>
             <nuxt-link slot="brand" class="navbar-brand mr-lg-5" to="/argon-demo/">
-                <img src="/argon/img/brand/white.png">
+                <h3>Zack Proser</h3>
             </nuxt-link>
 
             <div class="row" slot="content-header" slot-scope="{closeMenu}">

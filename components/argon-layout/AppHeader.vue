@@ -2,13 +2,13 @@
     <header class="header-global">
         <base-nav class="navbar-main" transparent type="" effect="light" expand>
             <nuxt-link slot="brand" class="navbar-brand mr-lg-5" to="/argon-demo/">
-                <img src="/argon/img/brand/white.png" alt="logo">
+                <h3 class="name-plate">Zack Proser</h3>
             </nuxt-link>
 
             <div class="row" slot="content-header" slot-scope="{closeMenu}">
                 <div class="col-6 collapse-brand">
                     <nuxt-link to="/argon-demo/">
-                        <img src="/argon/img/brand/blue.png">
+                        <h3 class="nav-modal-name-plate">Zack Proser</h3>
                     </nuxt-link>
                 </div>
                 <div class="col-6 collapse-close">
@@ -67,7 +67,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial"
+                    <a class="nav-link nav-link-icon" href="https://www.instagram.com/zackproser"
                        target="_blank" rel="noopener" data-toggle="tooltip" title="Follow us on Instagram">
                         <i class="fab fa-instagram"></i>
                         <span class="nav-link-inner--text d-lg-none">Instagram</span>
@@ -114,4 +114,10 @@ export default {
 };
 </script>
 <style>
+.name-plate {
+    color: #fff;
+}
+.nav-modal-name-plate {
+    color: blue;
+}
 </style>
