@@ -46,11 +46,20 @@
                 </card>
             </div>
         </section>
+        <section class="section pb-0 bg-gradient-warning">
+            <h4 class="display-4 text-white m-4">Working with me</h4>
+            <testimonial-carousel></testimonial-carousel>
+        </section>
     </div>
 </template>
 <script>
+import TestimonialCarousel from '~/components/TestimonialCarousel.vue'
+
 export default {
-  layout: 'argon-demo'
+  layout: 'argon-demo',
+  components: {
+      TestimonialCarousel
+  }
 };
 </script>
 <style>

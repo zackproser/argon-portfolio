@@ -14,7 +14,7 @@ module.exports = {
       { name: 'X-UA-Compatible', content: 'IE=edge' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=1, shrink-to-fit=no' },
       { hid: 'description', name: 'description', content: pkg.description },
-      { name: 'author', content: 'Creative Tim, Cristi Jora' }
+      { name: 'author', content: 'Zack Proser' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -27,9 +27,9 @@ module.exports = {
   ** https://developer.mozilla.org/en-US/docs/Web/Manifest
   */
   manifest: {
-    name: 'Vue Argon Design',
-    short_name: 'Argon Design',
-    description: 'Vue Argon Design System for Nuxt',
+    name: 'Zack Proser Portfolio',
+    short_name: 'Zack Proser',
+    description: 'Software engineer and artist',
     theme_color: '#172b4d',
   },
 
