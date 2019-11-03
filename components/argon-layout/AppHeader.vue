@@ -1,13 +1,13 @@
 <template>
     <header class="header-global">
         <base-nav class="navbar-main" transparent type="" effect="light" expand>
-            <nuxt-link slot="brand" class="navbar-brand mr-lg-5" to="/argon-demo/">
+            <nuxt-link slot="brand" class="navbar-brand mr-lg-5" to="/">
                 <h3 class="name-plate">Zack Proser</h3>
             </nuxt-link>
 
             <div class="row" slot="content-header" slot-scope="{closeMenu}">
                 <div class="col-6 collapse-brand">
-                    <nuxt-link to="/argon-demo/">
+                    <nuxt-link to="/">
                         <h3 class="nav-modal-name-plate">Zack Proser</h3>
                     </nuxt-link>
                 </div>
@@ -20,10 +20,10 @@
                 <base-dropdown class="nav-item" menu-classes="dropdown-menu-xl">
                     <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
                         <i class="ni ni-ui-04 d-lg-none"></i>
-                        <span class="nav-link-inner--text">My Work</span>
+                        <span class="nav-link-inner--text font-weight-800">My Work</span>
                     </a>
                     <div class="dropdown-menu-inner">
-                        <a href="https://demos.creative-tim.com/vue-argon-design-system/documentation/"
+                        <nuxt-link to="/software"
                            class="media d-flex align-items-center">
                             <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
                                 <i class="ni ni-spaceship"></i>
@@ -32,18 +32,17 @@
                                 <h6 class="heading text-primary mb-md-1">Software</h6>
                                 <p class="description d-none d-md-inline-block mb-0">Take a tour of my recent apps.</p>
                             </div>
-                        </a>
-                        <a href="https://demos.creative-tim.com/vue-argon-design-system/documentation/"
+                        </nuxt-link>
+                        <nuxt-link to="/testimonials"
                            class="media d-flex align-items-center">
                             <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
                                 <i class="ni ni-ui-04"></i>
                             </div>
-                            <div class="media-body ml-3">
-                                <h5 class="heading text-warning mb-md-1">Components</h5>
-                                <p class="description d-none d-md-inline-block mb-0">Learn how to use Argon
-                                    compiling Scss, change brand colors and more.</p>
+                            <div class="media-body ml-2">
+                                <h5 class="heading text-warning mb-md-1">Testimonials</h5>
+                                <p class="description d-none d-md-inline-block mb-0">Hear what people have to say about working with me.</p>
                             </div>
-                        </a>
+                        </nuxt-link>
                     </div>
                 </base-dropdown>
             </ul>

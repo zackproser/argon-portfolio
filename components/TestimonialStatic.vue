@@ -1,8 +1,8 @@
 <template>
- <div class="card card-lift--hover shadow border-0">
+ <div class="card card-lift--hover shadow border-0 mt-3 mb-3">
   <div class="card-body py-5 text-center">
       <img :src="imgSrc" :alt="imgAlt" class="rounded-circle">
-      <h6 class="display-4 mt-4 text-info text-uppercase">
+      <h6 class="display-4 mt-4 text-warning text-uppercase">
           {{ name }}
       </h6>
       <h6 class="display-4 text-warning">
@@ -24,7 +24,7 @@
 <script>
 
 export default {
-  name: 'testimonial-wikka',
+  name: 'testimonial-static',
   props: ['imgSrc', 'imgAlt', 'quote', 'name', 'title']
 }
 

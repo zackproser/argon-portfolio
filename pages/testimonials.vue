@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="section pb-0 bg-gradient-warning">
         <div class="container mt-5">
             <div class="row">
                 <div class="col-md-12 col-lg-12 mb-5 mb-lg-0">
@@ -25,6 +25,7 @@ import testimonials from '../data/testimonials.json'
 import TestimonialStatic from '~/components/TestimonialStatic.vue'
 
 export default {
+    layout: 'argon-demo',
     components: {
         TestimonialStatic
     },

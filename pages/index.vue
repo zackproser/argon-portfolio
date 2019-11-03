@@ -32,13 +32,21 @@
                             <h3>Zack Proser
                                 <span class="font-weight-light"></span>
                             </h3>
-                            <div class="h6 mt-4 font-weight-800"><i class="ni business_briefcase-24 mr-2"></i>Software Engineer</div>
+                            <nuxt-link to="/software">
+                                <div class="h6 mt-4 font-weight-800">
+                                <h6 class="text-warning display-4">Software Engineer</h6>
+                                </div>
+                            </nuxt-link>
+                            <a href="https://art.zackproser.com">
+                                <div class="h6 mt-4 font-weight-800">
+                                <h6 class="text-success display-4">Artist</h6>
+                                </div>
+                            </a>
                         </div>
                         <div class="mt-5 py-5 border-top text-center">
                             <div class="row justify-content-center">
                                 <div class="col-lg-9">
                                     <p>I am a full-stack software engineer currently working at Cloudflare.</p>
-                                    <a href="#">Show more</a>
                                 </div>
                             </div>
                         </div>
