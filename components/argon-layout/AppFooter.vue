@@ -1,23 +1,5 @@
 <template>
     <footer class="footer has-cards">
-        <div class="container container-lg">
-            <div class="row">
-                <div class="col-md-6 mb-5 mb-md-0">
-                    <div class="card card-lift--hover shadow border-0">
-                        <nuxt-link to="/argon-demo/landing" title="Landing Page">
-                            <img v-lazy="'/argon/img/theme/landing.jpg'" class="card-img">
-                        </nuxt-link>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-5 mb-lg-0">
-                    <div class="card card-lift--hover shadow border-0">
-                        <nuxt-link to="/argon-demo/profile" title="Profile Page">
-                            <img v-lazy="'/argon/img/theme/profile.jpg'" class="card-img">
-                        </nuxt-link>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="container">
             <div class="row row-grid align-items-center my-md">
                 <div class="col-lg-6 text-lg-center btn-wrapper">

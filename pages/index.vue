@@ -19,7 +19,7 @@
                             <div class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center">
                                 <div class="card-profile-actions py-4 mt-lg-0">
                                     <a href="https://linkedin.com/in/zackproser"><base-button type="info" size="sm" class="mr-4"><i class="fab fa-linkedin mr-2"></i> Connect</base-button></a>
-                                    <base-button type="default" size="sm" class="float-right"><i class="fab fa-github mr-2"></i>GitHub</base-button>
+                                    <a href="https://github.com/zackproser"><base-button type="default" size="sm" class="float-right"><i class="fab fa-github mr-2"></i>GitHub</base-button></a>
                                 </div>
                             </div>
                             <div class="col-lg-4 order-lg-1">
@@ -47,7 +47,6 @@
             </div>
         </section>
         <section class="section pb-0 bg-gradient-warning">
-            <h4 class="display-4 text-white m-4">Working with me</h4>
             <testimonial-carousel></testimonial-carousel>
         </section>
     </div>

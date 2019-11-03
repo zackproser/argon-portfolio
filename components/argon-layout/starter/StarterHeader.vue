@@ -1,10 +1,6 @@
 <template>
     <header class="header-global">
         <base-nav class="navbar-main" transparent type="" effect="light" expand>
-            <nuxt-link slot="brand" class="navbar-brand mr-lg-5" to="/argon-demo/">
-                <h3>Zack Proser</h3>
-            </nuxt-link>
-
             <div class="row" slot="content-header" slot-scope="{closeMenu}">
                 <div class="col-6 collapse-brand">
                     <nuxt-link to="/argon-demo/">
@@ -89,15 +85,6 @@
                        target="_blank" data-toggle="tooltip" title="Star us on Github">
                         <i class="fab fa-github"></i>
                         <span class="nav-link-inner--text d-lg-none">Github</span>
-                    </a>
-                </li>
-                <li class="nav-item d-none d-lg-block ml-lg-4">
-                    <a href="https://www.creative-tim.com/product/vue-argon-design-system" target="_blank"
-                       class="btn btn-neutral btn-icon">
-                <span class="btn-inner--icon">
-                  <i class="fa fa-cloud-download mr-2"></i>
-                </span>
-                        <span class="nav-link-inner--text">Download</span>
                     </a>
                 </li>
             </ul>
