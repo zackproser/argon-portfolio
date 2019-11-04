@@ -26,21 +26,31 @@
                         <nuxt-link to="/software"
                            class="media d-flex align-items-center">
                             <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
-                                <i class="ni ni-spaceship"></i>
+                                <i class="ni ni-laptop"></i>
                             </div>
                             <div class="media-body ml-3">
                                 <h6 class="heading text-primary mb-md-1">Software</h6>
-                                <p class="description d-none d-md-inline-block mb-0">Take a tour of my recent apps.</p>
+                                <p class="description d-none d-md-inline-block mb-0">Take a tour of my recent apps</p>
                             </div>
                         </nuxt-link>
                         <nuxt-link to="/testimonials"
                            class="media d-flex align-items-center">
                             <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
-                                <i class="ni ni-ui-04"></i>
+                                <i class="ni ni-circle-08"></i>
                             </div>
                             <div class="media-body ml-2">
                                 <h5 class="heading text-warning mb-md-1">Testimonials</h5>
-                                <p class="description d-none d-md-inline-block mb-0">Hear what people have to say about working with me.</p>
+                                <p class="description d-none d-md-inline-block mb-0">Hear what people have to say about working with me</p>
+                            </div>
+                        </nuxt-link>
+                        <nuxt-link to="/blog"
+                           class="media d-flex align-items-center">
+                            <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
+                                <i class="ni ni-book-bookmark"></i>
+                            </div>
+                            <div class="media-body ml-2">
+                                <h5 class="heading text-success mb-md-1">Blog</h5>
+                                <p class="description d-none d-md-inline-block mb-0">Read my latest posts</p>
                             </div>
                         </nuxt-link>
                     </div>

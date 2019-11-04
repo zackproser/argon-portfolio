@@ -21,7 +21,7 @@
                     {{ tag }}
                 </span>
             </div>
-            <nuxt-link :to="`/software/${post.slug}`">
+            <nuxt-link :to="`/${prefix}/${post.slug}`">
                 <div :class="`btn btn-${ct} mt-4`">
                     Read
                 </div>
@@ -37,6 +37,7 @@ export default {
     name: 'post-card',
     props: {
         post: Object,
+        prefix: String,
         ct: String
     },
     computed: {
