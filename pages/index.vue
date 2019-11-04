@@ -57,6 +57,92 @@
         <section class="section pb-0 bg-gradient-warning">
             <testimonial-carousel></testimonial-carousel>
         </section>
+        <section class="section bg-gradient-info">
+            <div class="container">
+                <div class="row row-grid align-items-center">
+                    <h5 class="display-3 text-white text-center">Work Experience</h5>
+                </div>
+                <div class="row row-grid align-items-center">
+                    <p class="text-white font-weight-800">I have over {{ yearsExperience }} years of experience in full stack development.</p>
+                </div>
+                <div class="row row-grid align-items-center">
+                    <div class="col-lg-12 order-lg-1">
+                        <div class="card shadow shadow-lg--hover mt-5">
+                            <div class="card-body">
+                                <div class="d-flex-3">
+                                    <div>
+                                        <div classs="icon icon-shape bg-gradient-success rounded-circle text-white"></div>
+                                        <div class="pl-4">
+                                            <h5 class="title display-4 text-warning">Cloudflare</h5>
+                                            <h4 class="title display-6 text-warning">Software Engineer</h4>
+                                            <ul>
+                                                <li>Core engineering team responsible for Cloudflare's control plane</li>
+                                                <li>Full stack systems design and engineering</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 order-lg-1">
+                        <div class="card shadow shadow-lg--hover mt-5">
+                            <div class="card-body">
+                                <div class="d-flex-3">
+                                    <div>
+                                        <div classs="icon icon-shape bg-gradient-success rounded-circle text-white"></div>
+                                        <div class="pl-4">
+                                            <h5 class="title display-4 text-warning">Cloudmark</h5>
+                                            <h4 class="title display-5 text-warning">Software Engineer</h4>
+                                            <ul>
+                                                <li>Build systems, UI and microservice development</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 order-lg-1">
+                        <div class="card shadow shadow-lg--hover mt-5">
+                            <div class="card-body">
+                                <div class="d-flex-3">
+                                    <div>
+                                        <div classs="icon icon-shape bg-gradient-success rounded-circle text-white"></div>
+                                        <div class="pl-4">
+                                            <h5 class="title display-4 text-warning">Johns Hopkins</h5>
+                                            <h4 class="title display-5 text-warning">Software Engineer</h4>
+                                            <ul>
+                                                <li>Bespoke web application development for clinical trial projects</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-12 order-lg-1">
+                        <div class="card shadow shadow-lg--hover mt-5">
+                            <div class="card-body">
+                                <div class="d-flex-3">
+                                    <div>
+                                        <div classs="icon icon-shape bg-gradient-success rounded-circle text-white"></div>
+                                        <div class="pl-4">
+                                            <h5 class="title display-4 text-warning">BrightContext</h5>
+                                            <h4 class="title display-5 text-warning">Software Engineer</h4>
+                                            <ul>
+                                                <li>Employee #9 of realtime stream processing engine startup</li>
+                                                <li>Acquired by WealthEngine</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </template>
 <script>
@@ -66,6 +152,11 @@ export default {
   layout: 'zack-proser',
   components: {
       TestimonialCarousel
+  },
+  data () {
+      return {
+          yearsExperience: Math.abs(new Date("January 1 2012").getFullYear() - new Date().getFullYear())
+      }
   }
 };
 </script>
