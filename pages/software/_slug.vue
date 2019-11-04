@@ -27,7 +27,7 @@
 <script>
 
 export default {
-  layout: 'argon-demo',
+  layout: 'zack-proser',
   name: 'SoftwareView',
   async asyncData({ params }) {
     try {

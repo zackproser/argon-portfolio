@@ -2,6 +2,10 @@
 <div class="col-lg-4">
     <div class="card card-list--hover shadow border-0">
         <div class="card-body py-5">
+            <img
+                :src="post.attributes.image"
+                class="img-fluid shadow mb-5"
+            />
             <nuxt-link :to="`/software/${post.slug}`">
                 <h6 :class="`text-${ct} display-4 text-uppercase`">
                     {{ post.attributes.title }}
