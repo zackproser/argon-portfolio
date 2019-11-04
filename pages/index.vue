@@ -46,7 +46,7 @@
                         <div class="mt-5 py-5 border-top text-center">
                             <div class="row justify-content-center">
                                 <div class="col-lg-9">
-                                    <p>I am a full-stack software engineer currently working at Cloudflare.</p>
+                                    <p>I am a full-stack <nuxt-link class="text-link" to="/software">software engineer</nuxt-link> and <a href="https://art.zackproser.com" class="text-link">artist</a> currently working at <a href="https://cloudflare.com"><span class="text-warning">Cloudflare</span>.</a></p>
                                 </div>
                             </div>
                         </div>
@@ -70,4 +70,11 @@ export default {
 };
 </script>
 <style>
+.text-link {
+    color: black;
+    text-decoration: underline;
+}
+.text-link:hover {
+    color: black;
+}
 </style>

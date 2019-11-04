@@ -1,7 +1,25 @@
 const pkg = require('./package')
 
+const glob = require('glob')
+const path = require('path')
+
+var getDynamicRoutes = function() {
+  return [].concat(
+    glob
+      .sync('*.md', { cwd: 'posts/' })
+      .map((filepath) => `/software/${path.basename(filepath, '.md')}`),
+    glob
+      .sync('*.md', { cwd: 'blog/' })
+      .map((filepath) => `/blog/${path.basename(filepath, '.md')}`)
+  )
+}
+
+var dynamicPaths = getDynamicRoutes()
 
 module.exports = {
+  generate: {
+    routes: dynamicPaths
+  },
   mode: 'universal',
 
   /*
@@ -99,7 +117,11 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-
+      config.module.rules.push({
+        test: /\.md$/,
+        include: [path.resolve(__dirname, 'posts'), path.resolve(__dirname, 'blog')],
+        loader: 'frontmatter-markdown-loader'
+      })
     }
   }
 }
