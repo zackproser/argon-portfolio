@@ -18,7 +18,7 @@
                             </div>
                             <div class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center">
                                 <div class="card-profile-actions py-4 mt-lg-0">
-                                    <a href="https://linkedin.com/in/zackproser"><base-button type="info" size="sm" class="mr-4"><i class="fab fa-linkedin mr-2"></i> Connect</base-button></a>
+                                    <a href="https://linkedin.com/in/zackproser"><base-button type="info" size="sm" class="mr-4"><i class="fab fa-linkedin mr-2"></i> LinkedIn</base-button></a>
                                     <a href="https://github.com/zackproser"><base-button type="default" size="sm" class="float-right"><i class="fab fa-github mr-2"></i>GitHub</base-button></a>
                                 </div>
                             </div>
@@ -46,7 +46,12 @@
                         <div class="mt-5 py-5 border-top text-center">
                             <div class="row justify-content-center">
                                 <div class="col-lg-9">
-                                    <p>I am a full-stack <nuxt-link class="text-link" to="/software">software engineer</nuxt-link> and <a href="https://art.zackproser.com" class="text-link">artist</a> currently working at <a href="https://cloudflare.com"><span class="text-warning">Cloudflare</span>.</a></p>
+                                    <p>
+                                        I am a full-stack <nuxt-link class="text-link" to="/software">software engineer</nuxt-link> and <a href="https://art.zackproser.com" class="text-link">artist</a> currently working at <a href="https://cloudflare.com"><span class="text-warning">Cloudflare</span>.</a>
+                                    </p>
+                                    <p>
+                                        I open source much of my software and write technical tutorials and articles on development.
+                                    </p>
                                 </div>
                             </div>
                         </div>
