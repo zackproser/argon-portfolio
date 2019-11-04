@@ -70,6 +70,9 @@ export default {
 };
 </script>
 <style>
+.card-body {
+    max-width: 100%;
+}
 .text-link {
     color: black;
     text-decoration: underline;
