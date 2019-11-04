@@ -63,7 +63,7 @@
 import TestimonialCarousel from '~/components/TestimonialCarousel.vue'
 
 export default {
-  layout: 'argon-demo',
+  layout: 'zack-proser',
   components: {
       TestimonialCarousel
   }

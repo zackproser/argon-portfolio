@@ -8,6 +8,7 @@
 import Exhibit from '~/components/Exhibit.vue'
 
 export default {
+  layout: 'zack-proser',
   name: 'Software',
   components: {
     Exhibit
@@ -28,9 +29,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.post-view__content p img:nth-of-type(1) {
-  margin-top: 30px;
-}
-</style>

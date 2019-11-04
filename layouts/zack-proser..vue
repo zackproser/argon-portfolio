@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import AppHeader from "~/components/argon-layout/AppHeader";
-import AppFooter from "~/components/argon-layout/AppFooter";
+import AppHeader from "~/components/zack-proser/AppHeader";
+import AppFooter from "~/components/zack-proser/AppFooter";
 
 export default {
   components: {

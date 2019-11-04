@@ -29,7 +29,7 @@
 
 <script>
 export default {
-    layout: 'argo-demo',
+    layout: 'zack-proser',
     name: 'post-card',
     props: {
         post: Object,

@@ -78,7 +78,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/argon/argon-kit'
+    '~/plugins/argon/argon-kit',
+    '~/plugins/common.js'
   ],
 
   /*
