@@ -2,7 +2,6 @@
 <div class="col-lg-4">
     <div class="card card-list--hover shadow border-0">
         <div class="card-body py-5">
-            {{ post.attributes.image }}
             <img
                 :src="`/${post.attributes.image}`"
                 class="img-fluid shadow mb-5"
