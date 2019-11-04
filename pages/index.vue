@@ -70,6 +70,9 @@ export default {
 };
 </script>
 <style>
+img {
+    max-width: 100%;
+}
 .card-body {
     max-width: 100%;
 }
