@@ -2,7 +2,7 @@
 title: Docker tips and tricks
 category: blog
 description: Helpful shortcuts and cli tips for Docker
-image: wikka.png
+image: wakka.png
 ---
 Here are some helpful tips I've discovered while working with Docker:
 
