@@ -14,8 +14,8 @@ export default {
     Exhibit
   },
   props: ['slug'],
-  data () {
-    console.log('data')
+  async asyncData() {
+    console.log('asyncData')
     const resolve = require.context('~/posts/', true, /\.md$/)
     const imports = resolve
       .keys()
