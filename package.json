@@ -1,7 +1,7 @@
 {
-  "name": "vue-argon-design-system-nuxt",
+  "name": "zack-proser-portfolio",
   "version": "1.1.0",
-  "description": "Vue Argon Design System for Nuxt",
+  "description": "Zack Proser's art and software portfolio",
   "author": "sames",
   "private": true,
   "scripts": {
