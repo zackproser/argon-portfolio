@@ -24,3 +24,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.container {
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+</style>
