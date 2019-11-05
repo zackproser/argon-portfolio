@@ -64,10 +64,10 @@
         </section>
         <section class="section bg-gradient-info">
             <div class="container">
-                <div class="row row-grid align-items-center">
+                <div class="row row-grid align-items-center ml-5">
                     <h5 class="display-3 text-white text-center">Work Experience</h5>
                 </div>
-                <div class="row row-grid align-items-center">
+                <div class="row row-grid align-items-center ml-5">
                     <p class="text-white font-weight-800">I have over {{ yearsExperience }} years of experience in full stack development.</p>
                 </div>
                 <div class="row row-grid align-items-center">
