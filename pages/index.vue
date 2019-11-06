@@ -1,10 +1,7 @@
 <template>
     <div class="profile-page">
-        <section class="section-profile-cover section-shaped my-0">
-            <div class="shape shape-style-1 shape-primary shape-skew alpha-4">
-            </div>
-        </section>
-        <section class="section section-skew">
+        <section class="section-profile-cover bg-gradient-success my-0"></section>
+        <section class="section section-skew bg-gradient-info">
             <div class="container">
                 <card shadow class="card-profile mt--300" no-body>
                     <div class="px-4">
