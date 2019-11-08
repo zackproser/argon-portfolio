@@ -6,16 +6,15 @@
                 @sliding-start="onSlideStart"
                 @sliding-end="onSlideEnd"
     >
-
-    <testimonial-card
-      v-for="testimonial in testimonials"
-      :key="testimonial.title"
-      :name="testimonial.name"
-      :title="testimonial.title"
-      :quote="testimonial.quote"
-      :imgSrc="testimonial.imgSrc"
-    >
-    </testimonial-card>
+      <testimonial-card
+        v-for="testimonial in testimonials"
+        :key="testimonial.title"
+        :name="testimonial.name"
+        :title="testimonial.title"
+        :quote="testimonial.quote"
+        :imgSrc="testimonial.imgSrc"
+      >
+      </testimonial-card>
 
     </b-carousel>
 </template>
