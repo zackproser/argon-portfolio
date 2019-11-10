@@ -2,7 +2,7 @@
   <b-carousel-slide img-blank>
     <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 mb-5">
                 <div class="card card-lift--hover shadow border-0">
                     <div class="card-body py-5">
                         <img :src="imgSrc" :alt="imgAlt" class="rounded-circle">
