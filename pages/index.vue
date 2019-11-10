@@ -59,6 +59,9 @@
         <section class="section pb-0 bg-gradient-warning">
             <testimonial-carousel></testimonial-carousel>
         </section>
+        <section class="section pb-0 bg-gradient-primary">
+            <recent-writings></recent-writings>
+        </section>
         <section class="section bg-gradient-info">
             <div class="container">
                 <div class="row row-grid align-items-center ml-5">
@@ -149,11 +152,13 @@
 </template>
 <script>
 import TestimonialCarousel from '~/components/TestimonialCarousel.vue'
+import RecentWritings from '~/components/RecentWritings.vue'
 
 export default {
   layout: 'zack-proser',
   components: {
-      TestimonialCarousel
+      TestimonialCarousel,
+      RecentWritings
   },
   data () {
       return {
