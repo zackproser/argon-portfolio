@@ -57,22 +57,39 @@
             </div>
         </section>
         <section class="section pb-0 bg-gradient-warning">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pb-5">
+                    <h1 class="display-3  text-white">Testimonials</h1>
+                    <p class="lead  text-white">Here's what people have to say about working with me.</p>
+                </div>
+            </div>
+        </div>
             <testimonial-carousel></testimonial-carousel>
         </section>
         <section class="section pb-0 bg-gradient-primary">
-            <recent-writings></recent-writings>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 pb-5">
+                        <h1 class="display-3  text-white">Recent writings</h1>
+                        <p class="lead  text-white">I love to share what I've learned via tutorials and technical deep dives.</p>
+                    </div>
+                </div>
+                <recent-writings></recent-writings>
+
+            </div>
         </section>
         <section class="section bg-gradient-info">
             <div class="container">
-                <div class="row row-grid align-items-center ml-5">
-                    <h5 class="display-3 text-white text-center">Work Experience</h5>
-                </div>
-                <div class="row row-grid align-items-center ml-5">
-                    <p class="text-white font-weight-800">I have over {{ yearsExperience }} years of experience in full stack development.</p>
+                <div class="row">
+                    <div class="col-lg-12 pb-5">
+                        <h1 class="display-3  text-white">Work experience</h1>
+                        <p class="lead  text-white">I have over {{ yearsExperience }} years of experience in full stack development.</p>
+                    </div>
                 </div>
                 <div class="row row-grid align-items-center">
                     <div class="col-lg-12 order-lg-1">
-                        <div class="card shadow shadow-lg--hover mt-5">
+                        <div class="card shadow shadow-lg--hover">
                             <div class="card-body">
                                 <div class="d-flex-3">
                                     <div>

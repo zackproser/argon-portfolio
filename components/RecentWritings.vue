@@ -10,7 +10,7 @@
                       <i class="ni ni-book-bookmark"></i>
                     </div>
                     <h6 class="text-primary text-uppercase">Super CatFacts Service in Golang and K8s</h6>
-                    <p class="description mt-3">I built a ridiculously over-engineered CatFacts service in Golang as an example of a clean and maintainable web service.</p>
+                    <p class="description mt-3">I built a ridiculously over-engineered CatFacts service in Golang as an example of a clean and maintainable web service. Then I deployed it to Google Cloud via Kubernetes.</p>
                     <h6 class="text-success text-uppercase">medium</h6>
                     <div>
                       <span class="badge badge-pill badge-primary">Golang</span>
