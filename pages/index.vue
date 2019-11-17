@@ -8,8 +8,8 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-3 order-lg-2">
                                 <div class="card-profile-image">
-                                    <a fhref="#">
-                                        <img v-lazy="'/zack-proser.jpeg'" class="rounded-circle">
+                                    <a href="#">
+                                        <img alt="Zack Proser profile" v-lazy="'/zack-proser.jpeg'" class="rounded-circle">
                                     </a>
                                 </div>
                             </div>

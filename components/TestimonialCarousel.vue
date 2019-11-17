@@ -13,6 +13,7 @@
         :title="testimonial.title"
         :quote="testimonial.quote"
         :imgSrc="testimonial.imgSrc"
+        :imgAlt="`${testimonial.name} testimonial`"
       >
       </testimonial-card>
 
