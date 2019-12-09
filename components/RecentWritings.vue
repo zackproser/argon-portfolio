@@ -51,7 +51,7 @@
                     <div>
                       <span class="badge badge-pill badge-warning">Javascript</span>
                       <span class="badge badge-pill badge-warning">Serverless</span>
-                      <span class="badge badge-pill badge-warning">Wokrers</span>
+                      <span class="badge badge-pill badge-warning">Workers</span>
                     </div>
                     <a href="https://blog.cloudflare.com/dogfooding-edge-workers/" class="btn btn-warning mt-4">Read</a>
                   </div>
