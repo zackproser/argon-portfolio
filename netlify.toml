@@ -1,0 +1,12 @@
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Netlify-Toml-Active = "true"
