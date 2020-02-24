@@ -88,8 +88,26 @@
                     </div>
                 </div>
                 <div class="row row-grid align-items-center">
-                    <div class="col-lg-12 order-lg-1">
+                       <div class="col-lg-12 order-lg-1">
                         <div class="card shadow shadow-lg--hover">
+                            <div class="card-body">
+                                <div class="d-flex-3">
+                                    <div>
+                                        <div classs="icon icon-shape bg-gradient-success rounded-circle text-white"></div>
+                                        <div class="pl-4">
+                                            <h5 class="title display-4 text-warning">Gruntwork.io</h5>
+                                            <h4 class="title display-6 text-warning">Software Engineer</h4>
+                                            <ul>
+                                                <li>DevOps automation</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 order-lg-1">
+                        <div class="card shadow shadow-lg--hover mt-5">
                             <div class="card-body">
                                 <div class="d-flex-3">
                                     <div>
