@@ -44,7 +44,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-9">
                                     <p>
-                                        I am a full-stack <nuxt-link class="text-link" to="/software">software engineer</nuxt-link> and <a href="https://art.zackproser.com" class="text-link">artist</a> currently working at <a href="https://cloudflare.com"><span class="text-warning">Cloudflare</span>.</a>
+                                        I am a full-stack <nuxt-link class="text-link" to="/software">software engineer</nuxt-link> and <a href="https://art.zackproser.com" class="text-link">artist</a> currently working at <a href="https://gruntwork.io/"><span class="text-primary company-name">Gruntwork.io</span>.</a>
                                     </p>
                                     <p>
                                         I open source much of my software and write technical tutorials and articles on development.
@@ -197,5 +197,8 @@ img {
 }
 .text-link:hover {
     color: black;
+}
+.company-name {
+    font-weight: 800;
 }
 </style>
