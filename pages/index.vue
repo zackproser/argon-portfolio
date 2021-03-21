@@ -44,15 +44,31 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-9">
                                     <p>
-                                        I am a full-stack <nuxt-link class="text-link" to="/software">software engineer</nuxt-link> and <a href="https://art.zackproser.com" class="text-link">artist</a> currently working at <a href="https://gruntwork.io/"><span class="text-primary company-name">Gruntwork.io</span>.</a>
-                                    </p>
-                                    <p>
-                                        I open source much of my software and write technical tutorials and articles on development.
+                                        I am a full-stack <nuxt-link class="text-link" to="/software">software engineer</nuxt-link> and <a href="https://art.zackproser.com" class="text-link">artist</a> currently working at <a href="https://gruntwork.io/"><span class="text-primary company-name">Gruntwork.io</span>.</a> I <a href="https://github.com/zackproser" class="text-link">open source</a> much of my software and <a href="https://medium.com/@zackproser" class="text-link">write technical tutorials and articles</a>. I am also a certified AWS Solutions Architect Associate, Hashicorp Terraform Associate and AWS Cloud Practitioner.
                                     </p>
                                 </div>
+				<div class="container">
+					<div class="row row-fluid">
+						<div class="col-4">
+					         	<a href="https://www.youracclaim.com/badges/baf2a178-fbb6-4e3b-bee3-a4e51bf1ecb4/public_url">
+								<img class="img shadow certification" alt="AWS Solutions Architect Associate" v-lazy="'/aws-solutions-architect-assoc.png'">
+							</a>
+						</div>
+						<div class="col-4">
+							<a href="https://www.youracclaim.com/badges/db9c63f6-1449-441d-b1b4-19b4fb3c76e5/public_url">
+								<img class="img shadow certification" alt="Terraform Associate" v-lazy="'/terraform-associate.png'">
+							</a>
+						</div>
+						<div class="col-4">
+							<a href="https://www.youracclaim.com/badges/94158be5-a0ea-4de4-9c66-5c087fac246e/public_url">
+								<img class="img shadow certification" alt="AWS Cloud Practitioner" v-lazy="'/aws-cloud-practitioner.png'">
+							</a>
+						</div>
+					</div>
+				</div>
                             </div>
                         </div>
-                    </div>
+		     </div>
                 </card>
             </div>
         </section>
@@ -206,6 +222,7 @@ export default {
 img {
     max-width: 100%;
 }
+
 .card-body {
     max-width: 100%;
 }

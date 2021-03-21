@@ -18,7 +18,7 @@
 
             <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
                 <base-dropdown class="nav-item" menu-classes="dropdown-menu-xl">
-                    <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
+                    <a slot="title" href="#" class="nav-link portfolio-menu" data-toggle="dropdown" role="button">
                         <i class="ni ni-ui-04 d-lg-none"></i>
                         <span class="nav-link-inner--text font-weight-800">My Work</span>
                     </a>
@@ -40,7 +40,7 @@
                             </div>
                             <div class="media-body ml-2">
                                 <h5 class="heading text-warning mb-md-1">Testimonials</h5>
-                                <p class="description d-none d-md-inline-block mb-0">Hear what people have to say about working with me</p>
+                                <p class="description d-none d-md-inline-block mb-0">What people say about working with me</p>
                             </div>
                         </nuxt-link>
                         <nuxt-link to="/blog"
@@ -101,5 +101,14 @@ export default {
 }
 .nav-modal-name-plate {
     color: blue;
+}
+
+a.portfolio-menu {
+    font-size: 24px;
+    background-color: #388e8c;
+}
+
+a.nav-link.nav-link-icon > i.fab {
+    font-size: 32px;
 }
 </style>
