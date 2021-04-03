@@ -13,6 +13,7 @@
             <p class="description mt-3">
                 {{ post.attributes.description }}
             </p>
+	    <h6 :class="`text-${ct} text-uppercase`">{{ post.attributes.publication }}</h6>
             <div>
                 <span v-for="tag in tags" v-if="tags.length > 0"
                     :class="`badge badge-pill badge-${ct}`"
