@@ -16,48 +16,41 @@
                 </div>
             </div>
 
-            <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-                <base-dropdown class="nav-item" menu-classes="dropdown-menu-xl">
-                    <a slot="title" href="#" class="nav-link portfolio-menu" data-toggle="dropdown" role="button">
-                        <i class="ni ni-ui-04 d-lg-none"></i>
-                        <span class="nav-link-inner--text font-weight-800">My Work</span>
-                    </a>
-                    <div class="dropdown-menu-inner">
-                        <nuxt-link to="/software"
-                           class="media d-flex align-items-center">
-                            <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
-                                <i class="ni ni-laptop"></i>
-                            </div>
-                            <div class="media-body ml-3">
-                                <h6 class="heading text-primary mb-md-1">Software</h6>
-                                <p class="description d-none d-md-inline-block mb-0">Take a tour of my recent apps</p>
-                            </div>
-                        </nuxt-link>
-                        <nuxt-link to="/testimonials"
-                           class="media d-flex align-items-center">
-                            <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
-                                <i class="ni ni-circle-08"></i>
-                            </div>
-                            <div class="media-body ml-2">
-                                <h5 class="heading text-warning mb-md-1">Testimonials</h5>
-                                <p class="description d-none d-md-inline-block mb-0">What people say about working with me</p>
-                            </div>
-                        </nuxt-link>
-                        <nuxt-link to="/blog"
-                           class="media d-flex align-items-center">
-                            <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
-                                <i class="ni ni-book-bookmark"></i>
-                            </div>
-                            <div class="media-body ml-2">
-                                <h5 class="heading text-success mb-md-1">Blog</h5>
-                                <p class="description d-none d-md-inline-block mb-0">Read my latest posts</p>
-                            </div>
-                        </nuxt-link>
-                    </div>
-                </base-dropdown>
-            </ul>
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                 <li class="nav-item">
+                    <nuxt-link to="/software"
+			class="nav-link nav-link-icon">
+                        <i class="fab fa-uncharted d-lg-none"></i>
+                        <span class="nav-link-inner--text d-lg-none">Software</span>
+			<h3 class="d-xs-none d-sm-none d-md-none d-lg-block d-xl-block text-white mt-2">Software</h3>
+                    </nuxt-link>
+                </li>
+		<li class="nav-item">
+
+                    <nuxt-link to="/articles"
+			class="nav-link nav-link-icon">
+                        <i class="fas fa-book d-lg-none"></i>
+                        <span class="nav-link-inner--text d-lg-none">Articles</span>
+			<h3 class="d-xs-none d-sm-none d-md-none d-lg-block d-xl-block text-white mt-2">Articles</h3>
+                    </nuxt-link>
+                </li>
+		<li class="nav-item">
+                    <nuxt-link to="/blog"
+			class="nav-link nav-link-icon">
+                        <i class="far fa-newspaper d-lg-none"></i>
+                        <span class="nav-link-inner--text d-lg-none">Blog</span>
+			<h3 class="d-xs-none d-sm-none d-md-none d-lg-block d-xl-block text-white mt-2">Blog</h3>
+                    </nuxt-link>
+                </li>
+		<li class="nav-item">
+                    <nuxt-link to="/testimonials"
+			class="nav-link nav-link-icon">
+                        <i class="far fa-comments d-lg-none"></i>
+                        <span class="nav-link-inner--text d-lg-none">Testimonials</span>
+			<h3 class="d-xs-none d-sm-none d-md-none d-lg-block d-xl-block text-white mt-2">Testimonials</h3>
+                    </nuxt-link>
+                </li>
+		<li class="nav-item">
                     <a class="nav-link nav-link-icon" href="https://www.instagram.com/zackproser"
                        target="_blank" rel="noopener" data-toggle="tooltip" title="View my artwork">
                         <i class="fab fa-instagram"></i>
@@ -108,7 +101,7 @@ a.portfolio-menu {
     background-color: #388e8c;
 }
 
-a.nav-link.nav-link-icon > i.fab {
+a.nav-link.nav-link-icon > i {
     font-size: 32px;
 }
 </style>

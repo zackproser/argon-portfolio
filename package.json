@@ -1,5 +1,5 @@
 {
-  "name": "zack-proser-portfolio",
+  "name": "Zack Proser's Portfolio",
   "version": "1.1.0",
   "description": "Zack Proser's art and software portfolio",
   "author": "sames",
@@ -11,7 +11,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.9.0",
+    "@fortawesome/fontawesome-free": "^5.15.0",
     "@nuxtjs/axios": "^5.13.1",
     "@nuxtjs/pwa": "^3.3.5",
     "bootstrap": "4.3.1",
