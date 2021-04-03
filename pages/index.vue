@@ -26,25 +26,15 @@
                             </div>
                         </div>
                         <div class="text-center mt-5">
-                            <h3>Zack Proser
+                            <h2>Zack Proser
                                 <span class="font-weight-light"></span>
-                            </h3>
-                            <nuxt-link to="/software">
-                                <div class="h6 mt-4 font-weight-800">
-                                <h6 class="text-warning display-4">Software Engineer</h6>
-                                </div>
-                            </nuxt-link>
-                            <a href="https://art.zackproser.com">
-                                <div class="h6 mt-4 font-weight-800">
-                                <h6 class="text-success display-4">Artist</h6>
-                                </div>
-                            </a>
+                            </h2>
                         </div>
                         <div class="mt-5 py-5 border-top text-center">
                             <div class="row justify-content-center">
                                 <div class="col-lg-9">
                                     <p>
-                                        I am a full-stack <nuxt-link class="text-link" to="/software">software engineer</nuxt-link> and <a href="https://art.zackproser.com" class="text-link">artist</a> currently working at <a href="https://gruntwork.io/"><span class="text-primary company-name">Gruntwork.io</span>.</a> I <a href="https://github.com/zackproser" class="text-link">open source</a> much of my software and <a href="https://medium.com/@zackproser" class="text-link">write technical tutorials and articles</a>. I am also a certified AWS Solutions Architect Associate, Hashicorp Terraform Associate and AWS Cloud Practitioner.
+                                        I am a full-stack <nuxt-link class="text-link" to="/software">software engineer</nuxt-link> and <a href="https://art.zackproser.com" class="text-link">artist</a> at <a href="https://gruntwork.io/"><span class="text-primary company-name">Gruntwork.io</span>.</a> I <a href="https://github.com/zackproser" class="text-link">open source</a> much of my software and <nuxt-link to="/articles" class="text-link">write technical tutorials and articles</nuxt-link>. I am also a certified AWS Solutions Architect Associate, Hashicorp Terraform Associate and AWS Cloud Practitioner.
                                     </p>
                                 </div>
 				<div class="container">
@@ -76,7 +66,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 pb-5">
-                    <h1 class="display-3  text-white">Testimonials</h1>
+		    <nuxt-link to="/testimonials">
+                    	<h1 class="display-3  text-white">Testimonials</h1>
+		    </nuxt-link>
                     <p class="lead  text-white">Here's what people have to say about working with me.</p>
                 </div>
             </div>
@@ -87,7 +79,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 pb-5">
-                        <h1 class="display-3  text-white">Recent writings</h1>
+			<nuxt-link to="/articles">
+                        	<h1 class="display-3  text-white">Technical writing</h1>
+			</nuxt-link>
                         <p class="lead  text-white">I love to share what I've learned via tutorials and technical deep dives.</p>
                     </div>
                 </div>
