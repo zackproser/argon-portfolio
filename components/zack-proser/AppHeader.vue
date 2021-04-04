@@ -22,7 +22,7 @@
 			class="nav-link nav-link-icon">
                         <i class="fab fa-uncharted d-lg-none"></i>
                         <span class="nav-link-inner--text d-lg-none">Software</span>
-			<h3 class="d-xs-none d-sm-none d-md-none d-lg-block d-xl-block text-white mt-2">Software</h3>
+			<h3 class="d-xs-none d-sm-none d-md-none d-lg-block d-xl-block text-white">Software</h3>
                     </nuxt-link>
                 </li>
 		<li class="nav-item">
@@ -31,7 +31,7 @@
 			class="nav-link nav-link-icon">
                         <i class="fas fa-book d-lg-none"></i>
                         <span class="nav-link-inner--text d-lg-none">Articles</span>
-			<h3 class="d-xs-none d-sm-none d-md-none d-lg-block d-xl-block text-white mt-2">Articles</h3>
+			<h3 class="d-xs-none d-sm-none d-md-none d-lg-block d-xl-block text-white">Articles</h3>
                     </nuxt-link>
                 </li>
 		<li class="nav-item">
@@ -39,7 +39,7 @@
 			class="nav-link nav-link-icon">
                         <i class="far fa-newspaper d-lg-none"></i>
                         <span class="nav-link-inner--text d-lg-none">Blog</span>
-			<h3 class="d-xs-none d-sm-none d-md-none d-lg-block d-xl-block text-white mt-2">Blog</h3>
+			<h3 class="d-xs-none d-sm-none d-md-none d-lg-block d-xl-block text-white">Blog</h3>
                     </nuxt-link>
                 </li>
 		<li class="nav-item">
@@ -47,7 +47,7 @@
 			class="nav-link nav-link-icon">
                         <i class="far fa-comments d-lg-none"></i>
                         <span class="nav-link-inner--text d-lg-none">Testimonials</span>
-			<h3 class="d-xs-none d-sm-none d-md-none d-lg-block d-xl-block text-white mt-2">Testimonials</h3>
+			<h3 class="d-xs-none d-sm-none d-md-none d-lg-block d-xl-block text-white">Testimonials</h3>
                     </nuxt-link>
                 </li>
 		<li class="nav-item">
@@ -99,6 +99,10 @@ export default {
 a.portfolio-menu {
     font-size: 24px;
     background-color: #388e8c;
+}
+
+a.nav-link.nav-link-icon {
+    max-height: 48px;
 }
 
 a.nav-link.nav-link-icon > i {
