@@ -71,7 +71,14 @@
                         <span class="nav-link-inner--text d-lg-none">Github</span>
                     </a>
                 </li>
-            </ul>
+           	<li class="nav-item">
+                    <a class="nav-link nav-link-icon" href="https://www.goodreads.com/user/show/111909762-zack"
+                       target="_blank" rel="noopener" data-toggle="tooltip" title="Find me on Goodreads">
+                        <i class="fab fa-goodreads"></i>
+                        <span class="nav-link-inner--text d-lg-none">Goodreads</span>
+                    </a>
+                </li>
+	    </ul>
         </base-nav>
     </header>
 </template>
