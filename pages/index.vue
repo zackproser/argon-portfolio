@@ -34,7 +34,18 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-9">
                                     <p>
-                                        I am a full-stack <nuxt-link class="text-link" to="/software">software engineer</nuxt-link> and <a href="https://art.zackproser.com" class="text-link">artist</a> at <a href="https://gruntwork.io/"><span class="text-primary company-name">Gruntwork.io</span>.</a> I <a href="https://github.com/zackproser" class="text-link">open source</a> much of my software and <nuxt-link to="/articles" class="text-link">write technical tutorials and articles</nuxt-link>. I am also a certified AWS Solutions Architect Associate, Hashicorp Terraform Associate and AWS Cloud Practitioner.
+                                        I am a full-stack <nuxt-link class="text-link" to="/software">software engineer</nuxt-link> and <a href="https://art.zackproser.com" class="text-link">artist</a> at <a href="https://gruntwork.io/"><span class="text-primary company-name">Gruntwork.io</span>.</a> I <a href="https://github.com/zackproser" class="text-link">open source</a> much of my software and <nuxt-link to="/articles" class="text-link">write technical tutorials and articles</nuxt-link>.</p>
+				    <p>My technical writing has appeared on:
+					<ul class="publication-list">
+						<li><a href="https://blog.cloudflare.com/author/zackp/">The Cloudflare Blog</a></li>
+						<li><a href="https://itnext.io/building-the-ultimate-portfolio-site-with-nuxt-js-and-netlify-beautiful-blazing-fast-100-seod-102913a60cfd">ITNEXT</a></li>
+						<li><a href="https://levelup.gitconnected.com/hacking-iframe-badges-into-auto-updating-github-profile-images-with-aws-lambda-and-golang-d6fbf78d6f6d">gitconnected</a></li>
+						<li><a href="https://medium.com/swlh/building-a-catfacts-pranking-service-in-golang-5b51e8721fe2">Start it up</a></li>
+					</ul>
+				    </p>
+
+				    <p>
+					I am also a certified AWS Solutions Architect Associate, Hashicorp Terraform Associate and AWS Cloud Practitioner.
                                     </p>
                                 </div>
 				<div class="container">
@@ -69,7 +80,7 @@
 		    <nuxt-link to="/testimonials">
                     	<h1 class="display-3  text-white">Testimonials</h1>
 		    </nuxt-link>
-                    <p class="lead  text-white">Here's what people have to say about working with me.</p>
+                    <p class="lead  text-white"><nuxt-link class="text-link text-white" to="/testimonials">Read what my colleagues have to say</nuxt-link> about working with me.</p>
                 </div>
             </div>
         </div>
@@ -82,7 +93,7 @@
 			<nuxt-link to="/articles">
                         	<h1 class="display-3  text-white">Technical writing</h1>
 			</nuxt-link>
-                        <p class="lead  text-white">I love to share what I've learned via tutorials and technical deep dives.</p>
+                        <p class="lead  text-white">I share what I've learned <nuxt-link to="/articles" class="text-link text-white">through tutorials and technical deep dives.</nuxt-link></p>
                     </div>
                 </div>
                 <recent-writings></recent-writings>
@@ -215,6 +226,10 @@ export default {
 <style>
 img {
     max-width: 100%;
+}
+
+.publication-list {
+    list-style-type: none;
 }
 
 .card-body {
