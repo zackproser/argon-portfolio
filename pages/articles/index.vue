@@ -1,6 +1,6 @@
 <template>
   <div>
-    <article prefix="articles" :posts="posts" />
+    <article-exhibit prefix="articles" :posts="posts" />
   </div>
 </template>
 

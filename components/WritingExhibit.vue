@@ -13,7 +13,7 @@ import ArticleCard from '~/components/ArticleCard.vue'
 
 export default {
   layout: 'default',
-  name: 'Exhibit',
+  name: 'ArticleExhibit',
   components: {
     ArticleCard
   },
