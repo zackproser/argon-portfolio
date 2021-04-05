@@ -1,17 +1,17 @@
 <template>
   <div>
-    <exhibit prefix="articles" :slug="slug" :posts="posts" />
+    <article prefix="articles" :posts="posts" />
   </div>
 </template>
 
 <script>
-import Exhibit from '~/components/WritingExhibit.vue'
+import ArticleExhibit from '~/components/WritingExhibit.vue'
 
 export default {
   layout: 'zack-proser',
   name: 'Articles',
   components: {
-    Exhibit
+    ArticleExhibit
   },
   props: ['slug'],
   async asyncData() {
