@@ -1,47 +1,49 @@
 <template>
   <b-carousel-slide img-blank>
     <div class="container">
-        <div class="row">
-          <div class="col-12 mb-5">
-                <div class="card card-lift--hover shadow border-0">
-                    <div class="card-body py-5">
-                        <img :src="imgSrc" :alt="imgAlt" class="rounded-circle">
-                        <h6 class="display-4 mt-4 text-warning text-uppercase">
-                            {{ name }}
-                        </h6>
-                        <h6 class="display-4 text-warning">
-                            {{ title }}
-                        </h6>
-                        <p class="lead m-4">
-                          <span style="color: Tomato">
-                            <i class="fa fa-quote-left mr-2"></i>
-                          </span>
-                            {{ quote }}
-                          <span style="color: Tomato;">
-                            <i class="fa fa-quote-right ml-2"></i>
-                          </span>
-                        </p>
-                        <nuxt-link class="text-warning " to="/testimonials">View all Testimonials</nuxt-link>
-                    </div>
-                </div>
+      <div class="row">
+        <div class="col-12 mb-5">
+          <div class="card card-lift--hover shadow border-0">
+            <div class="card-body py-5">
+              <img :src="imgSrc" :alt="imgAlt" class="rounded-circle" />
+              <h6 class="display-4 mt-4 text-warning text-uppercase">
+                {{ name }}
+              </h6>
+              <h6 class="display-4 text-warning">
+                {{ title }}
+              </h6>
+              <p class="lead m-4">
+                <span style="color: Tomato">
+                  <i class="fa fa-quote-left mr-2"></i>
+                </span>
+                {{ quote }}
+                <span style="color: Tomato;">
+                  <i class="fa fa-quote-right ml-2"></i>
+                </span>
+              </p>
+              <nuxt-link class="text-warning " to="/testimonials"
+                >View all Testimonials</nuxt-link
+              >
             </div>
-        </div><!--/row-->
-    </div><!--/container-->
+          </div>
+        </div>
+      </div>
+      <!--/row-->
+    </div>
+    <!--/container-->
   </b-carousel-slide>
 </template>
 
 <script>
-
 export default {
   name: 'testimonial-card',
-  props: ['imgSrc', 'imgAlt', 'quote', 'name', 'title']
+  props: ['imgSrc', 'imgAlt', 'quote', 'name', 'title'],
 }
-
 </script>
 
 <style>
 p {
-    color: black;
+  color: black;
 }
 
 .testimonial-item {
@@ -114,12 +116,11 @@ p {
 }
 
 div.carousel-caption {
-    position: initial !Important;
-    padding-top: 0px;
+  position: initial !Important;
+  padding-top: 0px;
 }
 
 img.img-fluid.w-100.d-block {
-    display: none !Important;
+  display: none !Important;
 }
-
 </style>
