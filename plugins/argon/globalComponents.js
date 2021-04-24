@@ -8,6 +8,8 @@ import BaseProgress from "~/components/argon/BaseProgress";
 import BaseRadio from "~/components/argon/BaseRadio";
 import BaseSlider from "~/components/argon/BaseSlider";
 import BaseSwitch from "~/components/argon/BaseSwitch";
+import { BButtonGroup } from 'bootstrap-vue';
+import { BButton } from 'bootstrap-vue'; 
 import Card from "~/components/argon/Card";
 import Icon from "~/components/argon/Icon";
 
@@ -23,6 +25,8 @@ export default {
     Vue.component(BaseRadio.name, BaseRadio);
     Vue.component(BaseSlider.name, BaseSlider);
     Vue.component(BaseSwitch.name, BaseSwitch);
+    Vue.component('b-button-group', BButtonGroup); 
+    Vue.component('b-button', BButton);
     Vue.component(Card.name, Card);
     Vue.component(Icon.name, Icon);
   }

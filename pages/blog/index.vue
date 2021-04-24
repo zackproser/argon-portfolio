@@ -10,7 +10,7 @@ import Exhibit from '~/components/Exhibit.vue'
 export default {
   name: 'Blog',
   components: {
-    Exhibit
+    Exhibit,
   },
   props: ['slug'],
   async asyncData() {
@@ -23,8 +23,8 @@ export default {
       })
       .filter((post) => post.attributes.category == 'blog')
     return {
-      posts: imports
+      posts: imports,
     }
-  }
+  },
 }
 </script>

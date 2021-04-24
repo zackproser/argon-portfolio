@@ -11,7 +11,7 @@ export default {
   layout: 'zack-proser',
   name: 'Software',
   components: {
-    Exhibit
+    Exhibit,
   },
   props: ['slug'],
   async asyncData() {
@@ -24,8 +24,8 @@ export default {
       })
       .filter((post) => post.attributes.category == 'software')
     return {
-      posts: imports
+      posts: imports,
     }
-  }
+  },
 }
 </script>
