@@ -11,7 +11,7 @@
             <h4 class="post-date">
               {{ post.attributes.date }}
             </h4>
-            <div class="card-body py-5" v-html="post.html" />
+            <div class="card-body py-5" v-html="post.html"></div>
           </div>
         </div>
       </div>
@@ -20,6 +20,8 @@
 </template>
 
 <script>
+import hljs from 'highlight.js'
+
 export default {
   layout: 'zack-proser',
   name: 'SoftwareView',
@@ -32,6 +34,9 @@ export default {
     } catch (err) {
       return false
     }
+  },
+  mounted() {
+    hljs.highlightAll()
   },
 }
 </script>

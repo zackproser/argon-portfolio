@@ -22,7 +22,7 @@
 import ArticleCard from '~/components/ArticleCard.vue'
 
 export default {
-  layout: 'default',
+  layout: 'zack-proser',
   name: 'ArticleExhibit',
   components: {
     ArticleCard,

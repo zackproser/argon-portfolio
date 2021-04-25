@@ -22,7 +22,7 @@
 import PostCard from '~/components/PostCard.vue'
 
 export default {
-  layout: 'default',
+  layout: 'zack-proser',
   name: 'Exhibit',
   components: {
     PostCard,
