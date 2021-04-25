@@ -75,33 +75,64 @@
                   </p>
                   <p>My technical writing has appeared on:</p>
 
-                  <b-button-group>
-                    <b-button
-                      variant="warning"
+                  <b-list-group horizontal="sm">
+                    <a
                       href="https://blog.cloudflare.com/author/zackp/"
-                      >The Cloudflare Blog
-                    </b-button>
-                    <b-button
-                      variant="info"
+                      target="_blank"
+                    >
+                      <b-list-group-item
+                        button="true"
+                        variant="warning"
+                        class="blog-warning"
+                      >
+                        Cloudflare Blog
+                      </b-list-group-item></a
+                    >
+                    <a
                       href="https://itnext.io/building-the-ultimate-portfolio-site-with-nuxt-js-and-netlify-beautiful-blazing-fast-100-seod-102913a60cfd"
-                      >ITNEXT
-                    </b-button>
-                    <b-button
-                      variant="danger"
+                      target="_blank"
+                    >
+                      <b-list-group-item
+                        button="true"
+                        variant="info"
+                        class="blog-info"
+                        >ITNEXT
+                      </b-list-group-item></a
+                    >
+                    <a
                       href="https://levelup.gitconnected.com/hacking-iframe-badges-into-auto-updating-github-profile-images-with-aws-lambda-and-golang-d6fbf78d6f6d"
-                      >gitconnected
-                    </b-button>
-                    <b-button
-                      variant="light"
+                      target="_blank"
+                    >
+                      <b-list-group-item
+                        button="true"
+                        variant="danger"
+                        class="blog-danger"
+                        >gitconnected
+                      </b-list-group-item></a
+                    >
+                    <a
                       href="https://medium.com/swlh/building-a-catfacts-pranking-service-in-golang-5b51e8721fe2"
-                      >Start it up
-                    </b-button>
-                    <b-button
-                      variant="success"
+                      target="_blank"
+                    >
+                      <b-list-group-item
+                        button="true"
+                        variant="light"
+                        class="blog-light"
+                        >Start it up
+                      </b-list-group-item></a
+                    >
+                    <a
                       href="https://blog.gruntwork.io/introducing-git-xargs-an-open-source-tool-to-update-multiple-github-repos-753f9f3675ec"
-                      >The Gruntwork Blog
-                    </b-button>
-                  </b-button-group>
+                      target="_blank"
+                    >
+                      <b-list-group-item
+                        button="true"
+                        variant="success"
+                        class="blog-success"
+                        >Gruntwork Blog
+                      </b-list-group-item></a
+                    >
+                  </b-list-group>
 
                   <p class="mt-3">
                     I am also a certified AWS Solutions Architect Associate,
@@ -369,5 +400,49 @@ img {
 }
 .company-name {
   font-weight: 800;
+}
+.list-group-item {
+  min-height: 82px;
+  font-weight: 800;
+}
+.blog-warning {
+  color: #fff;
+  background-color: #ff5e3e;
+}
+.list-group-item-warning.list-group-item-action:hover {
+  color: #fff;
+  background-color: #fb6b40;
+}
+.blog-danger {
+  color: #fff;
+  background-color: #f5365c;
+}
+.list-group-item-danger.list-group-item-action:hover {
+  color: #fff;
+  background-color: #db4b66;
+}
+.blog-info {
+  color: #fff;
+  background-color: #11cdef;
+}
+.list-group-item-info.list-group-item-action:hover {
+  color: #fff;
+  background-color: #56cee3;
+}
+.blog-light {
+  color: #fff;
+  background-color: #8965e0;
+}
+.list-group-item-light.list-group-item-action:hover {
+  color: #fff;
+  background-color: #9577dd;
+}
+.blog-success {
+  color: #fff;
+  background-color: #2dce89;
+}
+.list-group-item-success.list-group-item-action:hover {
+  color: #fff;
+  background-color: #5cd09e;
 }
 </style>
