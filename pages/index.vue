@@ -80,11 +80,7 @@
                       href="https://blog.cloudflare.com/author/zackp/"
                       target="_blank"
                     >
-                      <b-list-group-item
-                        button="true"
-                        variant="warning"
-                        class="blog-warning"
-                      >
+                      <b-list-group-item variant="warning" class="blog-warning">
                         Cloudflare Blog
                       </b-list-group-item></a
                     >
@@ -92,10 +88,7 @@
                       href="https://itnext.io/building-the-ultimate-portfolio-site-with-nuxt-js-and-netlify-beautiful-blazing-fast-100-seod-102913a60cfd"
                       target="_blank"
                     >
-                      <b-list-group-item
-                        button="true"
-                        variant="info"
-                        class="blog-info"
+                      <b-list-group-item variant="info" class="blog-info"
                         >ITNEXT
                       </b-list-group-item></a
                     >
@@ -103,10 +96,7 @@
                       href="https://levelup.gitconnected.com/hacking-iframe-badges-into-auto-updating-github-profile-images-with-aws-lambda-and-golang-d6fbf78d6f6d"
                       target="_blank"
                     >
-                      <b-list-group-item
-                        button="true"
-                        variant="danger"
-                        class="blog-danger"
+                      <b-list-group-item variant="danger" class="blog-danger"
                         >gitconnected
                       </b-list-group-item></a
                     >
@@ -114,10 +104,7 @@
                       href="https://medium.com/swlh/building-a-catfacts-pranking-service-in-golang-5b51e8721fe2"
                       target="_blank"
                     >
-                      <b-list-group-item
-                        button="true"
-                        variant="light"
-                        class="blog-light"
+                      <b-list-group-item variant="light" class="blog-light"
                         >Start it up
                       </b-list-group-item></a
                     >
@@ -125,10 +112,7 @@
                       href="https://blog.gruntwork.io/introducing-git-xargs-an-open-source-tool-to-update-multiple-github-repos-753f9f3675ec"
                       target="_blank"
                     >
-                      <b-list-group-item
-                        button="true"
-                        variant="success"
-                        class="blog-success"
+                      <b-list-group-item variant="success" class="blog-success"
                         >Gruntwork Blog
                       </b-list-group-item></a
                     >
