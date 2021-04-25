@@ -20,6 +20,8 @@
 </template>
 
 <script>
+import hljs from 'highlight.js'
+
 export default {
   layout: 'zack-proser',
   name: 'BlogView',
@@ -32,6 +34,9 @@ export default {
     } catch (err) {
       return false
     }
+  },
+  mounted() {
+    hljs.highlightAll()
   },
 }
 </script>
