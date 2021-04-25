@@ -73,6 +73,7 @@ module.exports = {
     '~assets/argon/scss/argon.scss',
     'bootstrap-vue/dist/bootstrap-vue.css',
     '~assets/transitions.css',
+    'highlight.js/styles/gruvbox-dark.css',
   ],
 
   /*
