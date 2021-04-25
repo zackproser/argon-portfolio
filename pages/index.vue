@@ -11,7 +11,7 @@
                   <a href="#">
                     <img
                       alt="Zack Proser profile"
-                      v-lazy="'/zack-proser.jpeg'"
+                      v-lazy="'/zachary-proser.png'"
                       class="rounded-circle"
                     />
                   </a>
