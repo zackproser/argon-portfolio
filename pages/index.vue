@@ -119,15 +119,27 @@
                   </b-list-group>
 
                   <p class="mt-3">
-                    I am also a certified AWS Solutions Architect Associate,
-                    Hashicorp Terraform Associate and AWS Cloud Practitioner.
+                    I am also a certified: AWS Developer Associate, AWS
+                    Solutions Architect Associate, AWS Cloud Practitioner, and
+                    Hashicorp Terraform Associate.
                   </p>
                 </div>
                 <div class="container">
                   <div class="row row-fluid">
-                    <div class="col-4">
+                    <div class="col-3">
                       <a
-                        href="https://www.youracclaim.com/badges/baf2a178-fbb6-4e3b-bee3-a4e51bf1ecb4/public_url"
+                        href="https://www.credly.com/badges/6b6bcd25-c114-40ec-988c-d85118a62413"
+                      >
+                        <img
+                          class="img shadow certification"
+                          alt="AWS Developer Associate"
+                          v-lazy="'/aws-developer-assoc.png'"
+                        />
+                      </a>
+                    </div>
+                    <div class="col-3">
+                      <a
+                        href="https://www.credly.com/badges/baf2a178-fbb6-4e3b-bee3-a4e51bf1ecb4/public_url"
                       >
                         <img
                           class="img shadow certification"
@@ -136,9 +148,9 @@
                         />
                       </a>
                     </div>
-                    <div class="col-4">
+                    <div class="col-3">
                       <a
-                        href="https://www.youracclaim.com/badges/db9c63f6-1449-441d-b1b4-19b4fb3c76e5/public_url"
+                        href="https://www.credly.com/badges/540ddf32-8399-4db1-88d6-f2f010b6a7ad/public_url"
                       >
                         <img
                           class="img shadow certification"
@@ -147,9 +159,9 @@
                         />
                       </a>
                     </div>
-                    <div class="col-4">
+                    <div class="col-3">
                       <a
-                        href="https://www.youracclaim.com/badges/94158be5-a0ea-4de4-9c66-5c087fac246e/public_url"
+                        href="https://www.credly.com/badges/df691558-e926-4d11-93ca-c15e1707c954/public_url"
                       >
                         <img
                           class="img shadow certification"
