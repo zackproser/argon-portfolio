@@ -50,25 +50,24 @@
               <div class="row justify-content-center">
                 <div class="col-lg-9">
                   <p>
-                    I am a full-stack
-                    <nuxt-link class="text-link" to="/software"
-                      >software engineer</nuxt-link
-                    >
-                    and
-                    <a href="https://art.zackproser.com" class="text-link"
-                      >artist</a
-                    >
-                    at
+                    I am a senior software engineer at
                     <a href="https://gruntwork.io/"
                       ><span class="text-primary company-name"
                         >Gruntwork.io</span
-                      >.</a
+                      ></a
                     >
-                    I
+                    and
+                    <a href="https://instagram.com/zackproser" class="text-link"
+                      >an artist</a
+                    >. I
                     <a href="https://github.com/zackproser" class="text-link"
                       >open source</a
                     >
-                    much of my software and
+                    much of
+                    <nuxt-link to="/software" class="text-link">
+                      my software</nuxt-link
+                    >
+                    and
                     <nuxt-link to="/articles" class="text-link"
                       >write technical tutorials and articles</nuxt-link
                     >.
