@@ -55,10 +55,6 @@
                       ><span class="text-primary company-name"
                         >Gruntwork.io</span
                       ></a
-                    >
-                    and
-                    <a href="https://instagram.com/zackproser" class="text-link"
-                      >an artist</a
                     >. I
                     <a href="https://github.com/zackproser" class="text-link"
                       >open source</a
@@ -232,7 +228,7 @@
             <h1 class="display-3  text-white">Work experience</h1>
             <p class="lead  text-white">
               I have over {{ yearsExperience }} years of experience in full
-              stack development.
+              stack development, automation and Infrastructure as Code (IaC).
             </p>
           </div>
         </div>
@@ -248,7 +244,7 @@
                     <div class="pl-4">
                       <h5 class="title display-4 text-warning">Gruntwork.io</h5>
                       <h4 class="title display-6 text-warning">
-                        Software Engineer
+                        Senior Software Engineer
                       </h4>
                       <ul>
                         <li>DevOps automation</li>

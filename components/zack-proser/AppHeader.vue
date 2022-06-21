@@ -50,35 +50,14 @@
 			<h3 class="d-xs-none d-sm-none d-md-none d-lg-block d-xl-block text-white">Testimonials</h3>
                     </nuxt-link>
                 </li>
-		<li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="https://www.instagram.com/zackproser"
-                       target="_blank" rel="noopener" data-toggle="tooltip" title="View my artwork">
-                        <i class="fab fa-instagram"></i>
-                        <span class="nav-link-inner--text d-lg-none">Instagram</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="https://twitter.com/zackproser" target="_blank" rel="noopener"
-                       data-toggle="tooltip" title="Follow me on Twitter">
-                        <i class="fab fa-twitter-square"></i>
-                        <span class="nav-link-inner--text d-lg-none">Twitter</span>
-                    </a>
-                </li>
-                <li class="nav-item">
+		           <li class="nav-item">
                     <a class="nav-link nav-link-icon" href="https://github.com/zackproser"
                        target="_blank" rel="noopener" data-toggle="tooltip" title="Find me on Github">
                         <i class="fab fa-github"></i>
                         <span class="nav-link-inner--text d-lg-none">Github</span>
                     </a>
                 </li>
-           	<li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="https://www.goodreads.com/user/show/111909762-zack"
-                       target="_blank" rel="noopener" data-toggle="tooltip" title="Find me on Goodreads">
-                        <i class="fab fa-goodreads"></i>
-                        <span class="nav-link-inner--text d-lg-none">Goodreads</span>
-                    </a>
-                </li>
-	    </ul>
+             </ul>
         </base-nav>
     </header>
 </template>

@@ -25,18 +25,17 @@
     "mixin-deep": "^1.3.2",
     "nouislider": "^14.0.1",
     "nuxt": "^2.15.3",
+    "sass": "^1.52.3",
     "set-value": "^4.0.1",
     "v-click-outside": "^2.1.3",
     "vue": "2.6.12",
     "vue-flatpickr-component": "^8.1.2",
-    "vue-highlight.js": "^3.1.0",
     "vue-lazyload": "^1.2.6",
     "vue2-transitions": "^0.3.0"
   },
   "devDependencies": {
     "eslint-config-prettier": "^5.0.0",
     "eslint-plugin-prettier": "3.1.0",
-    "node-sass": "^4.14.1",
     "nodemon": "^2.0.7",
     "prettier": "1.18.2",
     "sass-loader": "^7.1.0"
