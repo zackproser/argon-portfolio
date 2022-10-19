@@ -124,9 +124,12 @@ I tackled this problem by creating separate methods on the model for each of the
 
 ```go
 case "down", "j":     
-  m = m.SelectionCursorDown()  case "up", "k":                                
-  m = m.SelectionCursorUp()case "left", "h":                                
-  m = m.PreviousQuestion()   case "right", "l":                                
+  m = m.SelectionCursorDown()  
+case "up", "k":                                
+  m = m.SelectionCursorUp()
+case "left", "h":                                
+  m = m.PreviousQuestion()   
+case "right", "l":                                
   m = m.NextQuestion()                               
 ```
 
