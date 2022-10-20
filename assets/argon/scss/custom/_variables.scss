@@ -69,6 +69,7 @@ $colors: map-merge((
 
 $default:       #172b4d !default;
 $primary:       #5e72e4 !default;
+$green-link:    #00c10c !default;
 $secondary:     #f4f5f7 !default;
 $success:       $green !default;
 $info:          $teal !default;
@@ -198,7 +199,7 @@ $love-color: $red !default;
 // Body
 
 $body-bg: $white !default;
-$body-color: $gray-700 !default;
+$body-color: $black !default;
 
 
 // Sections
@@ -215,7 +216,7 @@ $section-colors: map-merge((
 
 // Links
 
-$link-color:                $primary !default;
+$link-color:                $green-link !default;
 $link-decoration:           none !default;
 $link-hover-color:          darken($link-color, 15%);
 $link-hover-decoration:     none !default;
@@ -311,8 +312,10 @@ $transition-collapse:         height .35s ease !default;
 
 // Fonts
 
-$font-family-base: 'Open Sans', sans-serif !default;
-$font-family-alt: 'Open Sans', sans-serif !default;
+$font-family-base: 'Oxygen', sans-serif !default;
+$font-family-alt: 'Oxygen', sans-serif !default;
+
+
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 $font-size-xl:                ($font-size-base * 1.5);
@@ -367,7 +370,7 @@ $display3-weight:             $font-weight-bold !default;
 $display4-weight:             $font-weight-bold !default;
 $display-line-height:         $headings-line-height !default;
 
-$paragraph-font-size:         1rem !default;
+$paragraph-font-size:         1.3rem !default;
 $paragraph-font-weight:       300 !default;
 $paragraph-line-height:       1.7 !default;
 

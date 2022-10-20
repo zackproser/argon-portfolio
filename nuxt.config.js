@@ -69,6 +69,7 @@ module.exports = {
    */
   css: [
     '~assets/argon/vendor/nucleo/css/nucleo.css',
+    '~assets/argon/vendor/oxygen/css/oxygen.css',
     '@fortawesome/fontawesome-free/css/all.css',
     '~assets/argon/scss/argon.scss',
     'bootstrap-vue/dist/bootstrap-vue.css',
