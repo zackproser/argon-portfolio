@@ -12,5 +12,5 @@ Vue.use(VueLazyload);
 Vue.use(vClickOutside);
 
 Vue.use(VueAnalytics, {
-  id: 'UA-13188644-11'
+  id: 'UA-13188644-29'
 })
