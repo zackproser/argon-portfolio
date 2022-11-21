@@ -26,5 +26,10 @@ export default {
       posts: imports,
     }
   },
+  methods: {
+    track() {
+      this.$ga.page('/blog')
+    }
+  }
 }
 </script>

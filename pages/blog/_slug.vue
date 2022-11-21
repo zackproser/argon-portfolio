@@ -38,5 +38,10 @@ export default {
   mounted() {
     hljs.highlightAll()
   },
+  methods: {
+   track() {
+      this.$ga.page(this.$route.path)
+   } 
+  }
 }
 </script>
