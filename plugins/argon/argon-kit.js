@@ -12,5 +12,10 @@ Vue.use(VueLazyload);
 Vue.use(vClickOutside);
 
 Vue.use(VueAnalytics, {
-  id: 'UA-13188644-29'
+  id: 'UA-13188644-29', 
+  debug: {
+    enabled: true, // default value
+    trace: true, // default value
+    sendHitTask: true // de
+  }
 })

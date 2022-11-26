@@ -20,8 +20,6 @@ module.exports = {
   generate: {
     routes: dynamicPaths,
   },
-  mode: 'universal',
-
   /*
    ** Headers of the page
    */
