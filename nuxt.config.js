@@ -1,17 +1,27 @@
 const pkg = require('./package')
-
 const glob = require('glob')
 const path = require('path')
+const markdown = require('frontmatter-markdown-loader')
+const fs = require('fs')
+const fm = require('front-matter')
+
+var readPostCategory = function(slug) {
+  const filepath =  `${process.cwd()}/posts/${slug}`
+  const data = fs.readFileSync(filepath, {encoding:'utf8', flag:'r'})
+  return fm(data).attributes.category
+}
 
 var getDynamicRoutes = function() {
   return [].concat(
     glob
-      .sync('*.md', { cwd: 'posts/' })
+    .sync('*.md', { cwd: 'posts/' })
+    .filter((filepath) => readPostCategory(filepath) == 'software')
       .map((filepath) => `/software/${path.basename(filepath, '.md')}`),
     glob
-      .sync('*.md', { cwd: 'blog/' })
+      .sync('*.md', { cwd: 'posts/' })
+      .filter((filepath) => readPostCategory(filepath) == 'blog')
       .map((filepath) => `/blog/${path.basename(filepath, '.md')}`)
-  )
+    )
 }
 
 var dynamicPaths = getDynamicRoutes()

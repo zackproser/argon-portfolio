@@ -27,7 +27,7 @@ export default {
   name: 'BlogView',
   async asyncData({ params }) {
     try {
-      let post = await import(`~/blog/${params.slug}.md`)
+      let post = await import(`~/posts/${params.slug}.md`)
       return {
         post,
       }

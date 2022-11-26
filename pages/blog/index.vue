@@ -14,7 +14,7 @@ export default {
   },
   props: ['slug'],
   async asyncData() {
-    const resolve = require.context('~/blog/', true, /\.md$/)
+    const resolve = require.context('~/posts/', true, /\.md$/)
     const imports = resolve
       .keys()
       .map((key) => {
