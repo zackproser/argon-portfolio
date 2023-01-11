@@ -23,6 +23,23 @@ More importantly, my skill and confidence in writing Golang has improved signifi
 
 In this post, I reflect on the techniques and habits that have delivered the highest return on my investments of time and effort: the winning strategies I plan to continue employing in the future because they make me more effective and content at work. 
 
+## TLDR 
+
+* I hired a professional coach
+* I got certified - again and again
+* I forced myself into cross-sensory practice 
+* I stoked my curiosity to propel me forward
+* I read like crazy
+* I constantly raised my hand to hop on the pain train 
+* I left documentation behind - with an attitude 
+* I maintained a second brain
+* I maintained a personal portfolio
+* I made a bunch of open-source contributions
+* I had hard conversations
+* I did code kata
+* I kept tabs on general language developments
+* I continued to evolve my development setup
+
 ## I hired a professional coach
 ___
 
@@ -223,17 +240,17 @@ This subject is meaty enough to deserve it's own future deep dive post. For now,
 ## I maintained a personal portfolio
 ___
 
-I keep my personal portfolio at https://zackproser.com.
+I keep my personal portfolio at [https://zackproser.com](https://zackproser).
 
 I'll expand on my thoughts around maintaining a portfolio in a different post, but for now I'll constrain myself to the highlights of why I believe doing this is worth the effort: 
 
-**It's a good excuse to remain plugged in to another tech stack.** I have done a good bit of frontend development in the past, but for the past few years my focus has been on IaC, systems automation, CLIs, Go, Bash, Python, AWS + cloud, etc. All the same, I like to remain at least somewhat plugged into the frontend world. I like to be able to build my own UIs when needed - and knowing the general ecosystem, its popular projects and their upsides and pain points makes me more well rounded and a better complement to any team members who *are* primarily working on the frontend day to day. 
+It's a good excuse to remain plugged in to another tech stack. I have done a good bit of frontend development in the past, but for the past few years my focus has been on IaC, systems automation, CLIs, Go, Bash, Python, AWS + cloud, etc. All the same, I like to remain at least somewhat plugged into the frontend world. I like to be able to build my own UIs when needed - and knowing the general ecosystem, its popular projects and their upsides and pain points makes me more well rounded and a better complement to any team members who *are* primarily working on the frontend day to day. 
 
-**It serves as a single place on the internet that you control which you can use to show off your past work and your skill set.** Run it on your own domain so the bastards can't hold you down. Never gone through maintaining your own domain before? Dealing with DNS? Adding your own subdomains over time and configuring HTTPS? All the more reason to run your own site, to gain this experience. 
+It serves as a single place on the internet that you control which you can use to show off your past work and your skill set. Run it on your own domain so the bastards can't hold you down. Never gone through maintaining your own domain before? Dealing with DNS? Adding your own subdomains over time and configuring HTTPS? All the more reason to run your own site, to gain this experience. 
 
-**It's a good excuse to learn (and care) about common web performance issues**: such as asset bundling and fingerprinting, good CI/CD practices for quick iteration and resolution, preview environments, caching, geo-aware customer routing, analytics, etc, etc, etc. As ever, some of the things that end up being true competitive edges for me at work are things I figured out screwing around with one of my many side projects. It doesn't really matter if your site is extremely popular or not, building experience with these common issues, common workarounds, solutions and tech stacks is - at the end of the day, just that: experience. It makes you more effective, marketable and expensive
+It's a good excuse to learn (and care) about common web performance issues, such as asset bundling and fingerprinting, good CI/CD practices for quick iteration and resolution, preview environments, caching, geo-aware customer routing, analytics, etc, etc, etc. As ever, some of the things that end up being true competitive edges for me at work are things I figured out screwing around with one of my many side projects. It doesn't really matter if your site is extremely popular or not, building experience with these common issues, common workarounds, solutions and tech stacks is - at the end of the day, just that: experience. It makes you more effective, marketable and expensive
 
-**It can be a good way to cross-pollinate with and to fuel or enhance your blogging efforts.** It's not for everyone, and there are plenty of good arguments for why you should just use a simple provider like Squarespace to build and maintain a separate blog, but, speaking for myself, having done all the brain damage to get posts working the way I wanted in my site increased my motivation to post my own content on my site, as well as my own satisfaction in seeing my content live on a site and system I built
+It can be a good way to cross-pollinate with and to fuel or enhance your blogging efforts. It's not for everyone, and there are plenty of good arguments for why you should just use a simple provider like Squarespace to build and maintain a separate blog, but, speaking for myself, having done all the brain damage to get posts working the way I wanted in my site increased my motivation to post my own content on my site, as well as my own satisfaction in seeing my content live on a site and system I built
 
 ## I made a bunch of open-source contributions
 ___
@@ -262,7 +279,7 @@ ___
 
 Left to their own devices, other people will fuck up your career progression at every single opportunity they get. In some cases it's because they're malicious or jealous - but this applies even to the excellent managers, owners and founders who care about you and have your back.  
 
-The key is `left to their own devices`. Even those looking out for you, wanting you to succeed and trying their best to support you *cannot read your mind*. 
+The key is *left to their own devices*. Even those looking out for you, wanting you to succeed and trying their best to support you *cannot read your mind*. 
 
 If you haven't already, recently and repeatedly been having conversations with ALL the relevant stakeholders about where you are in your progression, where you want to go and what changes, improvements, new skills will be required to get you there, then that promotion is not happening. 
 
