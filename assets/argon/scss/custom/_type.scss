@@ -1,9 +1,11 @@
 // General styles
 
-p {
+p, li {
 	font-size: $paragraph-font-size;
 	font-weight: $paragraph-font-weight;
 	line-height: $paragraph-line-height;
+  font-style: normal;
+  letter-spacing: -0.06px;
 } 
 
 .lead {
