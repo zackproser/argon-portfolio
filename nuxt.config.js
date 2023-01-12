@@ -31,7 +31,7 @@ module.exports = {
     routes: dynamicPaths,
   },
   googleAnalytics: {
-    id: 'UA-13188644-29'
+    id: 'UA-13188644-11',
   },
   /*
    ** Headers of the page
