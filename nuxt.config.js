@@ -30,11 +30,14 @@ module.exports = {
   generate: {
     routes: dynamicPaths,
   },
+  googleAnalytics: {
+    id: 'UA-13188644-29'
+  },
   /*
    ** Headers of the page
    */
   head: {
-    title: pkg.name,
+    title: "Zachary Proser",
     meta: [
       { charset: 'utf-8' },
       { name: 'X-UA-Compatible', content: 'IE=edge' },
@@ -45,8 +48,17 @@ module.exports = {
       },
       { hid: 'description', name: 'description', content: pkg.description },
       { name: 'author', content: 'Zack Proser' },
+      { name: 'twitter:card', content: 'summary'},
+      { name: "twitter:site", content: '@zackproser.com'},
+      { name: 'twitter:creator', content: '@zackproser'},
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }, 
+      { rel: 'apple-touch-icon', sizes: "180x180", href: "/apple-touch-icon.png"}, 
+      { rel: 'icon', type: "image/png", sizes: "32x32", href: "/favicon-32x32.png"}, 
+      { rel: 'icon', type: "image/png", sizes: "16x16", href: "/favicon-16x16.png"}, 
+      { rel: 'manifest',  href: "/site.webmanifest"}
+    ],
   },
 
   /*
@@ -65,6 +77,8 @@ module.exports = {
     // https://medium.com/@firt/dont-use-ios-web-app-meta-tag-irresponsibly-in-your-progressive-web-apps-85d70f4438cb
     mobileAppIOS: true,
     appleStatusBarStyle: '#172b4d',
+    msapplication_TileColor: '#da532c', 
+    theme_color: '#172b4d',
   },
 
   /*
@@ -107,6 +121,7 @@ module.exports = {
       },
     ],
     '@nuxtjs/pwa',
+    '@nuxtjs/google-analytics',
   ],
   /*
    ** Axios module configuration

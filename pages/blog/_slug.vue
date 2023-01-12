@@ -39,9 +39,9 @@ export default {
     hljs.highlightAll()
   },
   methods: {
-   track() {
+    track() {
       this.$ga.page(this.$route.path)
-   } 
+    }
   }
 }
 </script>
