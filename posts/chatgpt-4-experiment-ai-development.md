@@ -32,11 +32,25 @@ My impressions of the quality of its responses is generally favorable. I experie
 ![ChatGPT4 please regenerate this document in a different language](/chatgpt4-screens/ChatGPT4-pairing-readme-regen-markdown.png)
 
 
+#### The sweet spot - generative, tedious tasks
+
 ChatGPT 4 really shines when asked to perform tedious tasks that you'd normally do yourself or hand to your copywriter when preparing a post for publishing online. Here I am asking ChatGPT 4 to effectively save me a chunk of time. Its first response was excellent so getting the copy I needed for LinkedIn and Twitter took me as long as it would have taken to effective type or speak my description of the task into being. 
 
 ![ChatGPT 4 writing my LinkedIn and Twitter copy](/chatgpt4-screens/ChatGPT4-pairing-socials.png)
 
+ChatGPT 4 generated: 
+* The initial CLI scaffold, and then immediately tweaked it to include `bubbletea` in order to implement a TUI at my request
+* The initial README for the project 
+* When asked, the mermaid.js diagram featured in the README of the [`sizeof` CLI project](https://github.com/zackproser/sizeof)
+* The first draft of this blog post 
+* The LinkedIn post copy to announce the blog post
+* The Twiter post to announce the blog post
+
+In all these cases, I ended up slightly modifying the results myself, and in all these cases, these are artifacts I can and have produced for myself, but there's no doubt generating these starting points saved me a lot of time. 
+
 Where is GitHub Copilot in all of this? Nowhere, essentially. For the most part, while working with ChatGPT4, there was nothing of value that GitHub Copilot had to add, and I find its code suggestions painfully clumsy and incorrect, which is more a testament to the speed at which these LLM models are currently being developed and advanced. Copilot X, which is forthcoming at the time of this writing and leverages ChatGPT 4 under the hood, will be of significantly more interest to me depending on its pricing scheme.
+
+#### The UX sticking points
 
 Despite the clear advantages, there were some challenges when using ChatGPT-4.  One of these was the developer experience. I want a seamless integration of this, and likely, a bunch of other current and forthcoming models right in my terminal and likely right in Neovim. 
 
@@ -53,7 +67,7 @@ It seems I haven't yet discovered the magic key to integrate these tools seamles
 
 In several of the neovim plugins for ChatGPT I experimented with, I've noticed issues with ChatGPT API status needing to be reflected somehow within the terminal or curent buffer: essentially, signaling to the user that the ChatGPT plugin isn't dead, just waiting on data. I fully expect all of these minor UX quirks to dissipate rapidly, and I expect to be leveraging some kind of LLM model regularly within my personal workflow in the months to come.
 
-Finally, the desire to integrate AI-powered interfaces with other tools and platforms emerged, and made me wonder what kind of interface would be ideal here. As a developer and writer, I use various applications, such as Obsidian for building my second brain. Leveraging my experience in combining different tools, I'm now eager to see similar AI-powered interfaces integrated into these other contexts to further streamline my productivity and creative processes. I wonder if we'll end up wanting or seeing "AI wallets" or model multiplexers that allow you to securely or privately host a shared backend or database? If I want to run ChatGPT 4 in my terminal for coding, but also in my browser to help me edit text, and then later on my phone, how would I ideally share context amongst those different access points?
+Finally, the more that I came to see what I could accomplish with a streamlined LLM experience in my prefered code editor, the more that I realized I'm probably going to want some kind of AI interface in a variety of different contexts. As a developer and writer, I use various applications, such as [Obsidian](https://obsidian.md) for building my second brain. Leveraging my experience in combining different tools, I'm now eager to see similar AI-powered interfaces integrated into these other contexts to further streamline my productivity and creative processes. I wonder if we'll end up wanting or seeing "AI wallets" or model multiplexers that allow you to securely or privately host a shared backend or database? If I want to run ChatGPT 4 in my terminal for coding, but also in my browser to help me edit text, and then later on my phone, how would I ideally share context amongst those different access points?
 
 
 
