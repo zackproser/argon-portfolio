@@ -1,12 +1,12 @@
 ---
-title: Weekend experiment - Can ChatGPT-4 and GitHub Copilot help me produce a more complete side project more quickly?
+title: Can ChatGPT-4 and GitHub Copilot help me produce a more complete side project more quickly?
 category: blog
 description: As a Senior Software Engineer, I'm always looking for ways to refine my skills and optimize my workflow. This weekend, I experimented with integrating ChatGPT-4 into my developer toolkit alongside GitHub Copilot, which I've been using for several months. The goal? To see if these AI-powered tools could help me complete a side project more quickly. 
 image: chatgpt4-experiment.png
 tags: AI, development, productivity, neovim, ChatGPT
 ---
 ![ChatGPT 4 Pair coding experiment](/chatgpt4-screens/ChatGPT4-pairing-code-initial-request.png)
-
+  
 Over the years, I've embarked on [countless weekend side projects](https://github.com/zackproser) to explore new technologies, [refine my skills](https://www.youtube.com/@zackproser), and simply enjoy the creative process. As a Golang developer with a penchant for keyboard-driven development, I have learned to combine command line tools, IDEs, and text editors to maximize productivity and deliver results efficiently. 
 
 This weekend, I decided to see what, if any, speed boost I could unlock by weaving in ChatGPT-4 to my developer workflow and using it alongside GitHub Copilot, which I've been experimenting with for several months now. By the end of this post, you'll gain insights into the current state of these tools and how a Senior Software Engineer found them to be helpful, and in some cases, very helpful. 
@@ -31,6 +31,11 @@ My impressions of the quality of its responses is generally favorable. I experie
 
 ![ChatGPT4 please regenerate this document in a different language](/chatgpt4-screens/ChatGPT4-pairing-readme-regen-markdown.png)
 
+
+ChatGPT 4 really shines when asked to perform tedious tasks that you'd normally do yourself or hand to your copywriter when preparing a post for publishing online. Here I am asking ChatGPT 4 to effectively save me a chunk of time. Its first response was excellent so getting the copy I needed for LinkedIn and Twitter took me as long as it would have taken to effective type or speak my description of the task into being. 
+
+![ChatGPT 4 writing my LinkedIn and Twitter copy](/chatgpt4-screens/ChatGPT4-pairing-socials.png)
+
 Where is GitHub Copilot in all of this? Nowhere, essentially. For the most part, while working with ChatGPT4, there was nothing of value that GitHub Copilot had to add, and I find its code suggestions painfully clumsy and incorrect, which is more a testament to the speed at which these LLM models are currently being developed and advanced. Copilot X, which is forthcoming at the time of this writing and leverages ChatGPT 4 under the hood, will be of significantly more interest to me depending on its pricing scheme.
 
 Despite the clear advantages, there were some challenges when using ChatGPT-4.  One of these was the developer experience. I want a seamless integration of this, and likely, a bunch of other current and forthcoming models right in my terminal and likely right in Neovim. 
@@ -50,5 +55,5 @@ I've noticed issues with ChatGPT API status needing to be reflected somehow with
 
 Finally, the desire to integrate AI-powered interfaces with other tools and platforms emerged, and made me wonder what kind of interface would be ideal here. As a developer and writer, I use various applications, such as Obsidian for building my second brain. Leveraging my experience in combining different tools, I'm now eager to see similar AI-powered interfaces integrated into these other contexts to further streamline my productivity and creative processes.
 
-Overall, my weekend experiment with ChatGPT-4 and GitHub Copilot was an exciting glimpse into the potential of AI-assisted software development and writing. While there are clear benefits in terms of time savings and efficiency, there's still room for improvement in integrating these tools into our workflows and other contexts. As AI continues to evolve, I look forward to seeing how it shapes the future of software development and creative pursuits.
+
 
