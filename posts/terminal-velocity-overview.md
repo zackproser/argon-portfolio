@@ -1,7 +1,7 @@
 ---
 title: Terminal velocity - how to get faster as a developer 
 category: blog
-description: I obssess a decent amount over my own developer producity and my customized tmux, neovim and awesome window manager linux setup 
+description: I obssess a decent amount over my own developer producity and my customized tmux, neovim and awesome window manager linux setup, and now I pass my best learnings on to you
 image: wikka.png
 tags: developer, productivity, keyboard, tmux, neovim 
 ---
@@ -10,55 +10,61 @@ tags: developer, productivity, keyboard, tmux, neovim
 # Why read this article? 
 When you're finished reading this article, you'll understand the *why* and *how* behind my custom development setup, which has subjectively made me much faster and happier in my day to day work.
 
-Here's a screenshot of my setup in action, which leverages: 
-* Awesome Window Manager
-* tmux 
-* neovim 
-* AstroNvim
-* the ZSH shell 
-* Oh-my-zsh
+Here's a screenshot of my setup, captured from a streaming session. 
 
 ![Zachary Proser's custom developer workflow](/my-custom-development-setup.png)
 
 If you'd like to view my setup in action, you can view [my YouTube channel](https://youtube.com/@zackproser).
 
-I'm going to show you exactly what I type in my terminal, and exactly how I navigate my filesystem and work on projects with high fidelity demos, such as this one: 
+In this blog post, I'm going to show you exactly what I type in my terminal, and exactly how I navigate my filesystem and work on projects with high fidelity demos, such as this one: 
 
 ![tmux is your friend](/tmux-flow.gif)
 
 # Why do I care about this so much?
 
-I believe that when it's fun and efficient to do your work and interact with your tools and devices, you're more productive and happier.  Therefore, one of the reasons I find this topic so energizing is because I consider it an investment into making something that I do intensively for many hours per week as pleasurable and efficient as it reasonably should be. 
+I believe that when it's fun and efficient to do your work and interact with your tools and devices, you're more productive and happier.  Therefore, one of the reasons this topic energizes me is that it's an investment into making something that I do intensively for many hours per week as pleasurable and efficient as it reasonably should be. 
 
-But there's also another important reason I've been wanting to put out this blog post for a long time now. Many developers throughout my career have assisted me, and taken time out of their day to stop what they're doing and show me a better way. My current skill level is a product of my constant practice and the sum total of every new technique and pattern someone more experienced took the time to relay to me.  
+But there's also another important reason I've been wanting to put out this blog post for a long time now. Many developers throughout my career have assisted me, and taken time out of their day to stop what they're doing and show me a better way. 
+
+My current skill level is a product of my constant practice and the sum total of every new technique and pattern someone more experienced took the time to relay to me.  
+
 I am now finally producing this post as a means of saying thanks and paying forward the same favor to anyone who could benefit from this information.
 
 In this post, I share the most important things I've learned so far on my journey, which is by no means complete. I am no expert, but another student. 
 
 # The fundamentals must be speedy
-There are certain actions you'll perform a great number of times in your career as a software developer. All of these commands need to be extremely fast for you to execute. No exceptions!
+There are certain actions you'll perform a great number of times in your career as a software developer. You'll do them a number of times today, even! All of these things need to be extremely fast for you to execute. Fast like scratching an itch is - there's the impulse to be somewhere, and your fingers find the place effortlessly. **No exceptions!**
 
 * **Navigating to** code, locally or in the browser. This means finding the correct repository and jumping into it very quickly, with minimal keystrokes.
-* **Understanding or mapping code**. This means being able to see a symbol outline of a given file and see all the files in the project arranged hierarchically
+* **Understanding or mapping code**. This means being able to see a symbol outline (variables, functions, classes, consts, etc) of a given file and see all the files in the project arranged hierarchically
 * **Quick pattern and string searching** which allows you to answer the many questions that naturally arise as you're working with code
 
-These tasks are each important enough in their own right; we'll treat each separately: 
+These tasks are each important enough in their own right; we'll treat each separately. 
 
 ### Navigating to code, locally
 
 I work at a company with many (> 150) repositories currently. I manage this by cloning all the repositories to my development machine (using a script) and optionally running another script to step into each repository and perform a git pull.
 
-Maintaining the entirety of my company's code on my machine allows me to take full advantage of powerful command line tools like `fzf` and `ripgrep`.
+Maintaining all the repositories I'll reasonably touch locally on my machine allows me to take full advantage of powerful command line tools like `fzf` and `ripgrep`.
 
-You can run shell scripts to check out all your company's repositories and have a second script that drops into each local repository and does a git fetch and pull, which you can run periodically or even consider wiring up to a cron job to be done for you in the morning each day right before you start work normally. 
+I haven't yet felt the need to, but I could further optimize this by creating a cron job to run the update script each morning before I start work, so that I'm always looking at the latest code.
 
-`fzf` particularly shines as a tool for jumping quickly to any directory on your system. It can do much more than that, but if you use it only for quick jumps to different directories, you'll still be deriving a great deal of value from it.   
+Once I started managing my code locally, `fzf` particularly began to shine as a tool for jumping quickly to any directory on my system. As a fuzzy-finder, `fzf`  can do much more than that, but if you use it only for quick jumps to different directories, you'll still be deriving a great deal of value from it.   
 
 #### `fzf` in action
 
+![fzf demo - jumping to any directory very quickly](/fzf.gif)
+
 #### Navigating to code, in the browser
 
-For general keyboard-based browsing, I use the Vimium plugin for Firefox. 
+For general keyboard-based browsing, I use the Vimium plugin for Firefox. Here's a quick (<1min) video of me navigating an actual pull request on GitHub and demonstrating how easy (and quick) it is to: 
+
+* Comment on any line 
+* Jump to any file changed in the pull request 
+* Expand and use even the special functions behind an ellipses menu
+* Start editing a file within a pull request, if desired
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gRa3vEOPK_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 For GitHub navigation specifically, I've been using [Octotree](https://www.octotree.io/)
 
@@ -119,16 +125,9 @@ A lot of what junior engineers struggle with is is navigation and mise-en-place 
 
 # Keep your hands on the keyboard
 
-Don't use the mouse. Browse the web using your keyboard. Yes, it will suck initially and be uncomfortable and cause you to be slower overall. This will not last long if you stick with it. I'm now much faster using Vimium to handle even semi-complex tasks like reviewing a large pull request on GitHub, because I can use Vimium to jump directly to the HTML nodes I want, rather than having to drag a mouse across the screen multiple times. 
+That's what most of this really boils down to. 
 
-Screenrecording: 
-* Review PR in GitHub UI
-* Click multiple buttons directly
-
-Key tools:
-* Vimium 
-* Tmux 
-* Neovim
+In general, don't use the mouse. Browse the web using your keyboard. Yes, it will suck initially and be uncomfortable and cause you to be slower overall. This will not last long if you stick with it. I'm now much faster using Vimium to handle even semi-complex tasks like reviewing a large pull request on GitHub, because I can use Vimium to jump directly to the HTML nodes I want, rather than having to drag a mouse across the screen multiple times. There's a demo of me doing exactly this just a bit further on in this article.
 
 # Systems that scale
 
