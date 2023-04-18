@@ -1,0 +1,146 @@
+---
+title: Terminal velocity - how to get faster as a developer 
+category: blog
+description: I obssess a decent amount over my own developer producity and my customized tmux, neovim and awesome window manager linux setup, and now I pass my best learnings on to you
+image: wikka.png
+tags: developer, productivity, keyboard, tmux, neovim 
+---
+*"You could be the greatest architect in the world, but that won't matter much if it takes you forever to type everything into your computer."* [**Hugo Posca**](https://www.linkedin.com/in/hugoposca/)
+
+# Why read this article? 
+When you're finished reading this article, you'll understand the *why* and *how* behind my custom development setup, which has subjectively made me much faster and happier in my day to day work.
+
+Here's a screenshot of my setup, captured from a streaming session. 
+
+![Zachary Proser's custom developer workflow](/my-custom-development-setup.png)
+
+If you're interested in developer productivity and tooling and you want to watch me hack on open source using my complete setup, be sure to check out my [my YouTube channel](https://youtube.com/@zackproser).
+
+In this blog post, I'm going to show you exactly what I type in my terminal, and exactly how I navigate my filesystem and work on projects, using high fidelity demos:
+
+![tmux is your friend](/tmux-flow.gif)
+
+Perhaps more importantly, this initial overview post will explain the *why* - why do I go to the trouble to learn, configure, debug and combine all these tools in exactly this way? Ultimately, my workflow reflects what I've learned so far in my career.
+
+# Why do I care about this so much?
+
+I believe that when it's fun and efficient to do your work and interact with your tools and devices, you're more productive and happier.  Therefore, one of the reasons this topic energizes me is that it's an investment into making something that I do intensively for many hours per week as pleasurable and efficient as it reasonably should be. 
+
+But there's also another important reason I've been wanting to put out this blog post for a long time now. Many developers throughout my career have assisted me, and have taken time out of their day to stop what they were doing to show me a better way to do something, or a new tool or shortcut. 
+
+My current skill level is a product of my constant practice and the sum total of every new technique and pattern someone more experienced took the time to relay to me.  
+
+Therefore, I am also publishing this post as a means of saying thanks and paying forward the same favor to anyone who could benefit from this information.
+
+In this post, I share the most important things I've learned so far on my journey, which is by no means complete. I am no expert, but another student. 
+
+# Learning #1 - Keep your hands on the keyboard
+
+That's what most of this really boils down to. 
+
+In general, don't use the mouse. Browse the web using your keyboard. Yes, it will suck initially and be uncomfortable and cause you to be slower overall. This will not last long if you stick with it. I'm now much faster using Vimium to handle even semi-complex tasks like reviewing a large pull request on GitHub, because I can jump directly to the HTML nodes I want, rather than having to drag a mouse across the screen multiple times. There's a demo of me navigating GitHub with my keyboard just a bit further on in this article.
+
+# Learning #2 - The fundamentals must be speedy
+
+"You need to move a little faster than that son. Speed is Life." **Viper, Titanfall 2**
+
+<image width="70%" src=/viper.jpg>
+
+For a more real world and less silly example, see also Boyd's Law.
+
+There are certain actions you'll perform a great number of times in your career as a software developer. You'll do them a number of times today, even! All of these things need to be extremely fast for you to execute. Fast like scratching an itch is - there's the impulse to be somewhere, and your fingers find the place effortlessly. **No exceptions!**
+
+* **Navigating to** code, locally or in the browser. This means finding the correct repository and jumping into it very quickly, with minimal keystrokes.
+* **Understanding or mapping code**. This means being able to see a symbol outline (variables, functions, classes, consts, etc) of a given file and see all the files in the project arranged hierarchically
+* **Quick pattern and string searching** which allows you to answer the many questions that naturally arise as you're working with code
+
+These tasks are each important enough in their own right; we'll treat each separately. 
+
+### Navigating to code, locally
+
+I work at a company with many (> 150) repositories. I manage this by cloning all the repositories to my development machine (using a script) and optionally running another script to step into each repository and perform a git fetch and reset.
+
+Maintaining all the repositories I'll reasonably touch locally on my machine allows me to take full advantage of powerful command line tools like `fzf` and `rg` (ripgrep).
+
+I haven't yet felt the need to, but I could further optimize this by creating a cron job to run the update script each morning before I start work, so that I'm always looking at the latest code.
+
+Once I started managing my code locally, fzf particularly began to shine as a tool for jumping quickly to any directory on my system. As a fuzzy-finder, fzf can do much more than that, but if you use it only for quick jumps to different directories, you'll still be deriving a great deal of value from it.   
+
+#### `fzf` in action
+
+![fzf demo - jumping to any directory very quickly](/fzf.gif)
+
+#### The default is navigation 
+
+If I run `vim` in the root of any directory, my neovim setup will automatically open the directory in neotree, which makes navigating and understanding the file system easy and fast. 
+
+![neotree demo](/neotree.gif)
+
+#### Navigating to code, in the browser
+
+For general keyboard-based browsing, I use the Vimium plugin for Firefox. Here's a demo of me navigating an actual pull request on GitHub and demonstrating how easy (and quick) it is to: 
+
+* Comment on any line 
+* Jump to any file changed in the pull request 
+* Expand and use even the special functions behind an ellipses menu
+* Start editing a file within a pull request, if desired
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gRa3vEOPK_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### Understanding or mapping code quickly 
+
+When I open a new project or file, I want to orient myself quickly and develop a general understanding of the project layout and the structure of the program. To accomplish this, I lean on AstroNvim's configuration to pop up a symbol outline in my current file that I can use to navigate and understand the code: 
+
+![symbol outline demo](/symboloutline.gif)
+
+### Finding files, code or arbitrary strings on your local machine 
+
+Whether you're working on a new feature, trying to orient yourself to a new codebase or performing upgrades across several repositories, you're naturally going to have a lot of questions about your source code come up: 
+
+* Which versions of this software are currently deployed? 
+* How many places does that string we need to replace occur? 
+* Did that same typo we've seen elsewhere occur in this code? 
+
+And many, many more. You'd be surprised how many of these questions ripgrep can answer for you. I recommend learning as many of the flags for `rg` as you can. I picked up ripgrep a few years ago and it remains one of the things I run constantly throughout the day to get my work done more efficiently.
+
+![ripgrep is ideal for finding arbitrary strings across files](/ripgrep.gif)
+
+# Learning #3 - Reflow your workspace to fit your work
+
+I may execute many different tasks during the course of a day: write a new feature in one language, fix up some flaky or slow tests in another, write an RFC in markdown, create new configuration files, perform a deployment, etc. 
+
+This involves getting data from one place like a `terraform output` into a command line argument, and then copying and pasting the output of that command into the separate log file you're keeping, which you then separately want to pipe into another operation in a different pane. I think of my tmux panes as unix pipes. 
+
+The main idea is that my workspace is a fluid thing that can shift and scale up or down in order to accomodate the task at hand. If I'm writing code that needs to know the docker image ID of a particular image I built recently, I can pop open a new tmux pane and run whatever Docker commands I need to get that information. Because each pane is a shell, I can script against and further process my output with any and every unix tool to get exactly what I want. 
+
+Let's make this more concrete with an example. In the following demo gif, I use neovim to edit code, which means my editor is just another tmux pane. In this case, I'm writing some code that needs a Docker image ID. I need only create a new split and do my Docker work there. When I have the Docker image ID I need, I can close the extra pane, recovering the full screen's real estate for my focused coding task.
+
+![tmux is your friend](/tmux-flow.gif)
+
+In my day to day work, I might have between 3 and 8 different terminal panes open on a single screen, depending on the task. Panes show up to do some work and get some output that can be easily piped to any other pane. Panes whose work is finished can get closed down, recovering screen real-estate for other tasks.  I constantly reflow my workspace to my work.
+
+### Desktops - with an s
+Awesome Window Manager allows me to organize my work across two external monitors into 9 Windows each. This is extremely handy and something I use everyday. 
+
+Here's a rough idea of how I divide up my Windows to provide you with some inspiration, but everyone is likely going to settle on an arrangement that makes them happy: 
+
+1. Comms (Slack, email)
+2. Notes / Second brain (Obsidian.md)
+3. Spotify 
+4. Zoom call
+5. Main tmux window for editing code, with all sessions stored as tmux sessions
+6, 7, and 8 are my utility windows. I currently run my StreamDeck UI and logs across these 
+9. Browser windows for whatever I'm actively working on 
+
+Having these windows divided up in this way simplifies context-switching throughout the day for me. I always know exactly which window has which kind of application running in it, so it's snappy and natural to switch back and forth between them as needed, even while pair-coding or on a Zoom call. 
+
+# Next up, and a request
+
+That's it for this introductory post! In forthcoming posts in this series, I'll go deep on:
+
+* setting up these tools - how to install and configure them 
+* managing your configuration with git for recovery and reuse across multiple machines
+* shell optimizations that compound the speed boosts
+* advanced patterns, custom shell functions, additional use-cases, demos and useful scripts
+
+And now, a humble request. If you've found this article at all helpful or interesting, please share it with someone you think could benefit from the information. And, if you have feedback, questions or other content you'd like to see in the future, please don't hesitate to reach out and let me know. Thank you for reading!
