@@ -14,9 +14,9 @@ Here's a screenshot of my setup, captured from a streaming session.
 
 ![Zachary Proser's custom developer workflow](/my-custom-development-setup.png)
 
-If you'd like to view my setup in action, you can view [my YouTube channel](https://youtube.com/@zackproser).
+If you're interested in developer productivity and tooling and you want to watch me hack on open source using my complete setup, be sure to check out my [my YouTube channel](https://youtube.com/@zackproser).
 
-In this blog post, I'm going to show you exactly what I type in my terminal, and exactly how I navigate my filesystem and work on projects, using high fidelity demos and screen grabs, such as this one: 
+In this blog post, I'm going to show you exactly what I type in my terminal, and exactly how I navigate my filesystem and work on projects, using high fidelity demos:
 
 ![tmux is your friend](/tmux-flow.gif)
 
@@ -26,11 +26,11 @@ Perhaps more importantly, this initial overview post will explain the *why* - wh
 
 I believe that when it's fun and efficient to do your work and interact with your tools and devices, you're more productive and happier.  Therefore, one of the reasons this topic energizes me is that it's an investment into making something that I do intensively for many hours per week as pleasurable and efficient as it reasonably should be. 
 
-But there's also another important reason I've been wanting to put out this blog post for a long time now. Many developers throughout my career have assisted me, and taken time out of their day to stop what they're doing and show me a better way. 
+But there's also another important reason I've been wanting to put out this blog post for a long time now. Many developers throughout my career have assisted me, and have taken time out of their day to stop what they were doing to show me a better way to do something, or a new tool or shortcut. 
 
 My current skill level is a product of my constant practice and the sum total of every new technique and pattern someone more experienced took the time to relay to me.  
 
-I am now finally producing this post as a means of saying thanks and paying forward the same favor to anyone who could benefit from this information.
+Therefore, I am also publishing this post as a means of saying thanks and paying forward the same favor to anyone who could benefit from this information.
 
 In this post, I share the most important things I've learned so far on my journey, which is by no means complete. I am no expert, but another student. 
 
@@ -44,7 +44,7 @@ In general, don't use the mouse. Browse the web using your keyboard. Yes, it wil
 
 "You need to move a little faster than that son. Speed is Life." **Viper, Titanfall 2**
 
-<image width="60%" src=/viper.jpg>
+<image width="70%" src=/viper.jpg>
 
 For a more real world and less silly example, see also Boyd's Law.
 
@@ -58,7 +58,7 @@ These tasks are each important enough in their own right; we'll treat each separ
 
 ### Navigating to code, locally
 
-I work at a company with many (> 150) repositories currently. I manage this by cloning all the repositories to my development machine (using a script) and optionally running another script to step into each repository and perform a git fetch and reset.
+I work at a company with many (> 150) repositories. I manage this by cloning all the repositories to my development machine (using a script) and optionally running another script to step into each repository and perform a git fetch and reset.
 
 Maintaining all the repositories I'll reasonably touch locally on my machine allows me to take full advantage of powerful command line tools like `fzf` and `rg` (ripgrep).
 
@@ -78,20 +78,20 @@ If I run `vim` in the root of any directory, my neovim setup will automatically 
 
 #### Navigating to code, in the browser
 
-For general keyboard-based browsing, I use the Vimium plugin for Firefox. Here's a quick (<1min) video of me navigating an actual pull request on GitHub and demonstrating how easy (and quick) it is to: 
+For general keyboard-based browsing, I use the Vimium plugin for Firefox. Here's a demo of me navigating an actual pull request on GitHub and demonstrating how easy (and quick) it is to: 
 
 * Comment on any line 
 * Jump to any file changed in the pull request 
 * Expand and use even the special functions behind an ellipses menu
 * Start editing a file within a pull request, if desired
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gRa3vEOPK_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ### Understanding or mapping code quickly 
 
 When I open a new project or file, I want to orient myself quickly and develop a general understanding of the project layout and the structure of the program. To accomplish this, I lean on AstroNvim's configuration to pop up a symbol outline in my current file that I can use to navigate and understand the code: 
 
 ![symbol outline demo](/symboloutline.gif)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gRa3vEOPK_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Finding files, code or arbitrary strings on your local machine 
 
@@ -117,7 +117,7 @@ Let's make this more concrete with an example. In the following demo gif, I use 
 
 ![tmux is your friend](/tmux-flow.gif)
 
-In my day to day work, I might have between 3 and 8 different terminal panes open on a single screen, depending on the task. Panes show up to do some work and get and output that can be easily piped to any other pane. Panes whose work is finished can get closed down, recovering screen real-estate for other tasks.  I constantly reflow my workspace to my work.
+In my day to day work, I might have between 3 and 8 different terminal panes open on a single screen, depending on the task. Panes show up to do some work and get some output that can be easily piped to any other pane. Panes whose work is finished can get closed down, recovering screen real-estate for other tasks.  I constantly reflow my workspace to my work.
 
 ### Desktops - with an s
 Awesome Window Manager allows me to organize my work across two external monitors into 9 Windows each. This is extremely handy and something I use everyday. 
@@ -141,6 +141,6 @@ That's it for this introductory post! In forthcoming posts in this series, I'll 
 * setting up these tools - how to install and configure them 
 * managing your configuration with git for recovery and reuse across multiple machines
 * shell optimizations that compound the speed boosts
-* advanced patterns, custom shell functions, additional optimizations, use-cases, demos and useful scripts
+* advanced patterns, custom shell functions, additional use-cases, demos and useful scripts
 
 And now, a humble request. If you've found this article at all helpful or interesting, please share it with someone you think could benefit from the information. And, if you have feedback, questions or other content you'd like to see in the future, please don't hesitate to reach out and let me know. Thank you for reading!
