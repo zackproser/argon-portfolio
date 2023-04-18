@@ -44,7 +44,7 @@ In general, don't use the mouse. Browse the web using your keyboard. Yes, it wil
 
 "You need to move a little faster than that son. Speed is Life." **Viper, Titanfall 2**
 
-<image width="40%" src=/viper.jpg>
+<image width="60%" src=/viper.jpg>
 
 For a more real world and less silly example, see also Boyd's Law.
 
@@ -58,7 +58,7 @@ These tasks are each important enough in their own right; we'll treat each separ
 
 ### Navigating to code, locally
 
-I work at a company with many (> 150) repositories currently. I manage this by cloning all the repositories to my development machine (using a script) and optionally running another script to step into each repository and perform a git pull.
+I work at a company with many (> 150) repositories currently. I manage this by cloning all the repositories to my development machine (using a script) and optionally running another script to step into each repository and perform a git fetch and reset.
 
 Maintaining all the repositories I'll reasonably touch locally on my machine allows me to take full advantage of powerful command line tools like `fzf` and `rg` (ripgrep).
 
@@ -84,6 +84,12 @@ For general keyboard-based browsing, I use the Vimium plugin for Firefox. Here's
 * Jump to any file changed in the pull request 
 * Expand and use even the special functions behind an ellipses menu
 * Start editing a file within a pull request, if desired
+
+### Understanding or mapping code quickly 
+
+When I open a new project or file, I want to orient myself quickly and develop a general understanding of the project layout and the structure of the program. To accomplish this, I lean on AstroNvim's configuration to pop up a symbol outline in my current file that I can use to navigate and understand the code: 
+
+![symbol outline demo](/symboloutline.gif)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gRa3vEOPK_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
