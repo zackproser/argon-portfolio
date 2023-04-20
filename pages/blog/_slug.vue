@@ -12,6 +12,10 @@
               {{ post.attributes.date }}
             </h4>
             <div class="card-body py-5" v-html="post.html" />
+            <!-- Render email list subscription form -->
+            <div class="card-body py-5">
+              <script async src="https://eomail6.com/form/429b0fdc-df30-11ed-a050-811b537f971b.js" data-form="429b0fdc-df30-11ed-a050-811b537f971b"></script>
+            </div>
           </div>
         </div>
       </div>
