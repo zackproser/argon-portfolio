@@ -104,6 +104,9 @@ module.exports = {
     ],
     '@nuxtjs/pwa',
   ],
+  redirect: [
+    { from: '^/blog/?$', to: '/', statusCode: 301 }
+  ],
   /*
    ** Axios module configuration
    */
@@ -123,7 +126,6 @@ module.exports = {
         test: /\.md$/,
         include: [
           path.resolve(__dirname, 'posts'),
-          path.resolve(__dirname, 'blog'),
         ],
         loader: 'frontmatter-markdown-loader',
       })
