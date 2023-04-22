@@ -13,7 +13,7 @@ In this video, I demonstrate the following aspects of aws-vault:
 
   * Executing arbitrary commands against your account: The video starts by showing how aws-vault can be used to execute any command against your AWS account securely. By invoking aws-vault with the appropriate profile name, you can fetch temporary AWS credentials and pass them into subsequent commands, ensuring a secure way of managing AWS access.
 
-  * Quick AWS account login: Next, the presenter demonstrates how to use aws-vault to log in to one of your AWS accounts quickly. This feature is particularly helpful for developers and system administrators who manage multiple AWS accounts and need to switch between them frequently.
+  * Quick AWS account login: Next, I show how to use aws-vault to log in to one of your AWS accounts quickly. This feature is particularly helpful for developers and system administrators who manage multiple AWS accounts and need to switch between them frequently.
 
   * Integration with Firefox container tabs: One of the most exciting parts of the video is the demonstration of how aws-vault can be used in conjunction with Firefox container tabs to log in to multiple AWS accounts simultaneously. This innovative approach allows you to maintain separate browsing sessions for each AWS account, making it easier to manage and work with different environments.
 
