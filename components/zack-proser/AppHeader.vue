@@ -28,7 +28,7 @@
                     </nuxt-link>
                 </li>
 		<li class="nav-item">
-                    <nuxt-link to="/blog"
+                    <nuxt-link to="/"
 			class="nav-link nav-link-icon">
                         <i class="far fa-newspaper d-lg-none"></i>
                         <span class="nav-link-inner--text d-lg-none">Blog</span>
