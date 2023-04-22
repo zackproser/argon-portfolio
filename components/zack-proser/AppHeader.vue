@@ -1,5 +1,7 @@
 <template>
     <header class="header-global">
+    <!-- EmailOctopus Hellobar - fired after user has been on site for more than 10 seconds -->
+    <script async src="https://eomail6.com/form/f172a6e6-df30-11ed-b645-f7c71699d4ec.js" data-form="f172a6e6-df30-11ed-b645-f7c71699d4ec"></script>
         <base-nav class="navbar-main" transparent type="" effect="light" expand>
             <nuxt-link slot="brand" class="navbar-brand mr-lg-5" to="/">
                 <h3 class="name-plate">Zack Proser</h3>
@@ -18,24 +20,15 @@
 
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                 <li class="nav-item">
-                    <nuxt-link to="/software"
-			class="nav-link nav-link-icon">
-                        <i class="fab fa-uncharted d-lg-none"></i>
-                        <span class="nav-link-inner--text d-lg-none">Software</span>
-			<h3 class="d-xs-none d-sm-none d-md-none d-lg-block d-xl-block text-white">Software</h3>
-                    </nuxt-link>
-                </li>
-		<li class="nav-item">
-
-                    <nuxt-link to="/articles"
+                    <nuxt-link to="/about"
 			class="nav-link nav-link-icon">
                         <i class="fas fa-book d-lg-none"></i>
-                        <span class="nav-link-inner--text d-lg-none">Articles</span>
-			<h3 class="d-xs-none d-sm-none d-md-none d-lg-block d-xl-block text-white">Articles</h3>
+                        <span class="nav-link-inner--text d-lg-none">About me</span>
+			<h3 class="d-xs-none d-sm-none d-md-none d-lg-block d-xl-block text-white">About me</h3>
                     </nuxt-link>
                 </li>
 		<li class="nav-item">
-                    <nuxt-link to="/blog"
+                    <nuxt-link to="/"
 			class="nav-link nav-link-icon">
                         <i class="far fa-newspaper d-lg-none"></i>
                         <span class="nav-link-inner--text d-lg-none">Blog</span>

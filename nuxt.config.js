@@ -1,27 +1,12 @@
 const pkg = require('./package')
 const glob = require('glob')
 const path = require('path')
-const markdown = require('frontmatter-markdown-loader')
-const fs = require('fs')
-const fm = require('front-matter')
-
-var readPostCategory = function(slug) {
-  const filepath =  `${process.cwd()}/posts/${slug}`
-  const data = fs.readFileSync(filepath, {encoding:'utf8', flag:'r'})
-  return fm(data).attributes.category
-}
 
 var getDynamicRoutes = function() {
-  return [].concat(
-    glob
+  // Map the raw markdown files in the posts directory 
+  return glob
     .sync('*.md', { cwd: 'posts/' })
-    .filter((filepath) => readPostCategory(filepath) == 'software')
-      .map((filepath) => `/software/${path.basename(filepath, '.md')}`),
-    glob
-      .sync('*.md', { cwd: 'posts/' })
-      .filter((filepath) => readPostCategory(filepath) == 'blog')
-      .map((filepath) => `/blog/${path.basename(filepath, '.md')}`)
-    )
+    .map((filepath) => `/blog/${path.basename(filepath, '.md')}`)
 }
 
 var dynamicPaths = getDynamicRoutes()
@@ -30,12 +15,9 @@ module.exports = {
   generate: {
     routes: dynamicPaths,
   },
-  googleAnalytics: {
-    id: 'UA-13188644-11',
-  },
   /*
-   ** Headers of the page
-   */
+ ** Headers of the page
+ */
   head: {
     title: "Zachary Proser",
     meta: [
@@ -48,16 +30,16 @@ module.exports = {
       },
       { hid: 'description', name: 'description', content: pkg.description },
       { name: 'author', content: 'Zack Proser' },
-      { name: 'twitter:card', content: 'summary'},
-      { name: "twitter:site", content: '@zackproser.com'},
-      { name: 'twitter:creator', content: '@zackproser'},
+      { name: 'twitter:card', content: 'summary' },
+      { name: "twitter:site", content: '@zackproser.com' },
+      { name: 'twitter:creator', content: '@zackproser' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }, 
-      { rel: 'apple-touch-icon', sizes: "180x180", href: "/apple-touch-icon.png"}, 
-      { rel: 'icon', type: "image/png", sizes: "32x32", href: "/favicon-32x32.png"}, 
-      { rel: 'icon', type: "image/png", sizes: "16x16", href: "/favicon-16x16.png"}, 
-      { rel: 'manifest',  href: "/site.webmanifest"}
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'apple-touch-icon', sizes: "180x180", href: "/apple-touch-icon.png" },
+      { rel: 'icon', type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
+      { rel: 'icon', type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
+      { rel: 'manifest', href: "/site.webmanifest" }
     ],
   },
 
@@ -77,7 +59,7 @@ module.exports = {
     // https://medium.com/@firt/dont-use-ios-web-app-meta-tag-irresponsibly-in-your-progressive-web-apps-85d70f4438cb
     mobileAppIOS: true,
     appleStatusBarStyle: '#172b4d',
-    msapplication_TileColor: '#da532c', 
+    msapplication_TileColor: '#da532c',
     theme_color: '#172b4d',
   },
 
@@ -121,7 +103,9 @@ module.exports = {
       },
     ],
     '@nuxtjs/pwa',
-    '@nuxtjs/google-analytics',
+  ],
+  redirect: [
+    { from: '^/blog/?$', to: '/', statusCode: 301 }
   ],
   /*
    ** Axios module configuration
@@ -142,7 +126,6 @@ module.exports = {
         test: /\.md$/,
         include: [
           path.resolve(__dirname, 'posts'),
-          path.resolve(__dirname, 'blog'),
         ],
         loader: 'frontmatter-markdown-loader',
       })
